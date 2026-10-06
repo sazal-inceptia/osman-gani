@@ -91,7 +91,7 @@
                 </span>
             </div>
 
-            <!-- Login Link -->
+            <!-- Support Link -->
             <div class="flex items-center gap-3">
                 <a href="{{ route('contact') }}" class="inline-flex items-center gap-1 text-gray-300 hover:text-white border border-gray-700 hover:border-[#df3243] px-3 py-1 rounded-md text-xs transition">
                     <i class="fa-solid fa-headset text-[10px]"></i>
@@ -304,6 +304,9 @@
                     <a href="{{ route('privacy-policy') }}" class="hover:text-white transition">Privacy Policy</a>
                     <a href="{{ route('terms-of-usage') }}" class="hover:text-white transition">Terms Of Usage</a>
                     <a href="{{ route('contact') }}" class="hover:text-white transition">Contact Us</a>
+                    <a href="{{ route('admin.login') }}" class="text-gray-500 hover:text-[#df3243] transition flex items-center gap-1">
+                        <i class="fa-solid fa-user text-[9px]"></i> Login
+                    </a>
                 </div>
             </div>
         </div>

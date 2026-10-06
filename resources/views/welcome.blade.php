@@ -1107,6 +1107,7 @@
                         <li><a href="{{ route('resources.blog') }}" class="hover:text-white transition block py-1">Articles &amp; Blog</a></li>
                         <li><a href="{{ route('privacy-policy') }}" class="hover:text-white transition block py-1">Privacy Policy</a></li>
                         <li><a href="{{ route('terms-of-usage') }}" class="hover:text-white transition block py-1">Terms of Usage</a></li>
+                        <li><a href="{{ route('admin.login') }}" class="text-gray-500 hover:text-[#df3243] transition block py-1"><i class="fa-solid fa-user text-[10px] mr-1"></i> Login</a></li>
                     </ul>
                 </div>
 

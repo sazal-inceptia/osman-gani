@@ -73,7 +73,29 @@
 
                 <!-- Right: Direct Message Form -->
                 <div class="lg:col-span-7">
-                    <form action="#" method="POST" class="glass-card p-8 sm:p-12 rounded-3xl space-y-6 border-2 border-red-900/40" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully. Our team will contact you within 24 hours.');">
+                    @if (session('success'))
+                        <div class="mb-6 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-6 py-4 rounded-2xl text-sm flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Message Sent Successfully!</h4>
+                                <p class="text-xs text-emerald-300 mt-0.5">{{ session('success') }}</p>
+                            </div>
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="mb-6 bg-red-500/10 border border-red-500/30 text-red-400 p-4 rounded-2xl text-xs space-y-1">
+                            @foreach ($errors->all() as $error)
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <span>{{ $error }}</span>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
+
+                    <form action="{{ route('contact.store') }}" method="POST" class="glass-card p-8 sm:p-12 rounded-3xl space-y-6 border-2 border-red-900/40">
+                        @csrf
                         <h3 class="font-oswald text-3xl font-bold text-white uppercase tracking-wide">
                             Send Us A Direct Message
                         </h3>
@@ -82,34 +104,39 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Your Full Name *</label>
-                                <input type="text" required placeholder="e.g. Shakib Al Hasan" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                                <input type="text" name="name" value="{{ old('name') }}" required placeholder="e.g. Shakib Al Hasan" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
                             </div>
                             <div>
                                 <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Email Address *</label>
-                                <input type="email" required placeholder="name@example.com" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                                <input type="email" name="email" value="{{ old('email') }}" required placeholder="name@example.com" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
                             </div>
                         </div>
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Phone / WhatsApp Number</label>
-                                <input type="tel" placeholder="+880 1700-000000" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                                <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+880 1700-000000" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
                             </div>
                             <div>
                                 <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Inquiry Topic</label>
-                                <select class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
-                                    <option>Keynote Speaking / Corporate Event</option>
-                                    <option>Online Course / Academy Support</option>
-                                    <option>Bulk Book Orders</option>
-                                    <option>Media &amp; Press Interview</option>
-                                    <option>Other Collaboration</option>
+                                <select name="inquiry_type" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                                    <option value="Keynote Speaking / Corporate Event" {{ old('inquiry_type') == 'Keynote Speaking / Corporate Event' ? 'selected' : '' }}>Keynote Speaking / Corporate Event</option>
+                                    <option value="Online Course / Academy Support" {{ old('inquiry_type') == 'Online Course / Academy Support' ? 'selected' : '' }}>Online Course / Academy Support</option>
+                                    <option value="Bulk Book Orders" {{ old('inquiry_type') == 'Bulk Book Orders' ? 'selected' : '' }}>Bulk Book Orders</option>
+                                    <option value="Media & Press Interview" {{ old('inquiry_type') == 'Media & Press Interview' ? 'selected' : '' }}>Media &amp; Press Interview</option>
+                                    <option value="Other Collaboration" {{ old('inquiry_type') == 'Other Collaboration' ? 'selected' : '' }}>Other Collaboration</option>
                                 </select>
                             </div>
                         </div>
 
                         <div>
+                            <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Organization / Company Name</label>
+                            <input type="text" name="organization" value="{{ old('organization') }}" placeholder="e.g. TechCorp Asia" class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                        </div>
+
+                        <div>
                             <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Your Message *</label>
-                            <textarea rows="4" required placeholder="Write your message or inquiry here..." class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]"></textarea>
+                            <textarea name="message" rows="4" required placeholder="Write your message or inquiry here..." class="w-full bg-[#11141d] border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">{{ old('message') }}</textarea>
                         </div>
 
                         <div class="pt-2">
