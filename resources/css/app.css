@@ -1,9 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-heading: 'Oswald', sans-serif;
+    --font-subheading: 'Poppins', sans-serif;
+    --font-body: 'Ubuntu', sans-serif;
+    --color-brand-red: #df3243;
+    --color-brand-red-dark: #b81b2b;
+    --color-brand-orange: #ff8421;
+    --color-brand-dark: #0a0c10;
+    --color-brand-darker: #050608;
+    --color-brand-card: #12151c;
+}
+
+:root {
+    --primary: #df3243;
+    --primary-hover: #b81b2b;
+    --accent-orange: #ff8421;
+    --dark-bg: #090a0f;
+    --dark-surface: #12151f;
+    --text-primary: #1a1a1a;
+}
+
+body {
+    font-family: 'Ubuntu', 'Inter', sans-serif;
+    color: #222;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Red double border hover divider */
+.brand-divider {
+    width: 60px;
+    height: 4px;
+    border-top: 4px double #1a1a1a;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 14px auto 10px;
+}
+
+.stat-card:hover .brand-divider {
+    border-top-color: #df3243;
+    width: 80px;
+}
+
+/* Button styles inspired by deepakbajaj.biz */
+.btn-pill-white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #df3243 !important;
+    background-color: #ffffff !important;
+    border: 2px solid #df3243;
+    border-radius: 9999px;
+    padding: 0.45rem 1.5rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-pill-white:hover {
+    background-color: #df3243 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(223, 50, 67, 0.4);
+}
+
+.btn-pill-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #df3243 !important;
+    background-color: #ffffff !important;
+    border: 2px solid #df3243;
+    border-radius: 9999px;
+    padding: 0.45rem 1.5rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 8px rgba(223, 50, 67, 0.12);
+}
+
+.btn-pill-red:hover {
+    background-color: #df3243 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(223, 50, 67, 0.4);
+}
+
+.btn-pill-filled-red {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #df3243 0%, #b81b2b 100%) !important;
+    border: 2px solid #df3243;
+    border-radius: 9999px;
+    padding: 0.5rem 1.75rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 4px 14px rgba(223, 50, 67, 0.4);
+}
+
+.btn-pill-filled-red:hover {
+    background: linear-gradient(135deg, #f03e50 0%, #cf2334 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(223, 50, 67, 0.6);
+}
+
+.btn-pill-outline-dark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.06) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    padding: 0.45rem 1.5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-pill-outline-dark:hover {
+    border-color: #df3243;
+    background-color: #df3243 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(223, 50, 67, 0.4);
+}
+
+/* Social Icon Badges */
+.social-icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 0.875rem;
+    transition: all 0.25s ease;
+}
+
+.social-icon-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* 3D Book Shadow Effect */
+.book-card-3d {
+    perspective: 1000px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.book-card-3d:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* Glowing Border for dark testimonial cards */
+.testimonial-card-dark {
+    background: #11141d;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: all 0.35s ease;
+}
+
+.testimonial-card-dark:hover {
+    border-color: rgba(223, 50, 67, 0.4);
+    box-shadow: 0 12px 35px rgba(223, 50, 67, 0.18);
+    transform: translateY(-4px);
+}
+
+/* Marquee infinite animation */
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+    animation-play-state: paused;
+}
+
+/* Smooth dropdown transition */
+.dropdown-menu-custom {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .dropdown-menu-custom {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
