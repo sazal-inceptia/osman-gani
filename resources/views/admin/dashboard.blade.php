@@ -5,6 +5,10 @@
 @section('page_subtitle', 'Real-time metrics, active programs, and recent user communications')
 
 @section('top_actions')
+    <a href="{{ route('admin.homepage.index') }}" class="btn-pill-white text-xs px-4 py-2 inline-flex items-center gap-1.5">
+        <i class="fa-solid fa-house-laptop text-xs text-[#df3243]"></i>
+        <span>Home Page &amp; Video</span>
+    </a>
     <a href="{{ route('admin.articles.create') }}" class="btn-pill-filled-red text-xs px-4 py-2">
         <i class="fa-solid fa-plus mr-1"></i> New Article
     </a>

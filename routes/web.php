@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\AdminContactController;
 use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\Admin\AdminEventController;
+use App\Http\Controllers\Admin\AdminHomePageController;
 use App\Http\Controllers\Admin\AdminSettingController;
 use App\Http\Controllers\Auth\AdminAuthController;
 use App\Http\Controllers\ContactController;
@@ -132,6 +133,12 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/messages/{message}', [AdminContactController::class, 'show'])->name('messages.show');
     Route::post('/messages/{message}/toggle-read', [AdminContactController::class, 'toggleRead'])->name('messages.toggle-read');
     Route::delete('/messages/{message}', [AdminContactController::class, 'destroy'])->name('messages.destroy');
+
+    // Home Page Management
+    Route::get('/homepage', [AdminHomePageController::class, 'index'])->name('homepage.index');
+    Route::post('/homepage', [AdminHomePageController::class, 'update'])->name('homepage.update');
+    Route::delete('/homepage/video', [AdminHomePageController::class, 'removeVideo'])->name('homepage.remove-video');
+    Route::delete('/homepage/speaker-image', [AdminHomePageController::class, 'removeSpeakerImage'])->name('homepage.remove-speaker-image');
 
     // Site Settings
     Route::get('/settings', [AdminSettingController::class, 'index'])->name('settings.index');

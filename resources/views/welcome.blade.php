@@ -205,41 +205,47 @@
                     
                     <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-[#df3243] animate-pulse"></span>
-                        <span>Global Transformation &amp; Business Mastery</span>
+                        <span>{{ $siteSettings['hero_badge'] ?? 'Global Transformation & Business Mastery' }}</span>
                     </div>
 
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-oswald font-extrabold uppercase tracking-tight text-white leading-tight">
-                        Transform Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ff4757] via-[#ff6b81] to-[#ff8421]">Mindset</span>, Multiply Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ff8421] to-[#ffa502]">Business</span>
+                        {{ $siteSettings['hero_heading_line1'] ?? 'Transform Your' }}
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ff4757] via-[#ff6b81] to-[#ff8421]">
+                            {{ $siteSettings['hero_heading_highlight1'] ?? 'Mindset' }}
+                        </span>{{ $siteSettings['hero_heading_line2'] ?? ', Multiply Your' }}
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#ff8421] to-[#ffa502]">
+                            {{ $siteSettings['hero_heading_highlight2'] ?? 'Business' }}
+                        </span>
                     </h1>
 
                     <p class="text-base sm:text-lg text-gray-300 font-ubuntu font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        A master of personal and business breakthrough, <strong>Osman Gani</strong> has been inspiring and equipping entrepreneurs, leaders, and youth across 50+ countries to unlock peak potential, lead with authority, and 10x their achievements.
+                        {!! nl2br(e($siteSettings['hero_tagline'] ?? 'A master of personal and business breakthrough, Osman Gani has been inspiring and equipping entrepreneurs, leaders, and youth across 50+ countries to unlock peak potential, lead with authority, and 10x their achievements.')) !!}
                     </p>
 
                     <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                        <a href="{{ route('courses') }}" class="btn-pill-filled-red text-lg px-8 py-3.5 shadow-lg shadow-red-600/30">
-                            <span>Explore Courses &amp; Books</span>
+                        <a href="{{ $siteSettings['hero_btn_primary_url'] ?? route('courses') }}" class="btn-pill-filled-red text-lg px-8 py-3.5 shadow-lg shadow-red-600/30">
+                            <span>{{ $siteSettings['hero_btn_primary_text'] ?? 'Explore Courses & Books' }}</span>
                             <i class="fa-solid fa-arrow-trend-up"></i>
                         </a>
-                        <a href="{{ route('speaking') }}" class="inline-flex items-center gap-2 font-oswald font-medium text-lg px-6 py-3 rounded-full border-2 border-white/20 hover:border-white text-white hover:bg-white/10 transition">
+                        <a href="{{ $siteSettings['hero_btn_secondary_url'] ?? route('speaking') }}" class="inline-flex items-center gap-2 font-oswald font-medium text-lg px-6 py-3 rounded-full border-2 border-white/20 hover:border-white text-white hover:bg-white/10 transition">
                             <i class="fa-solid fa-calendar-check text-[#ff8421]"></i>
-                            <span>Invite For Keynote</span>
+                            <span>{{ $siteSettings['hero_btn_secondary_text'] ?? 'Invite For Keynote' }}</span>
                         </a>
                     </div>
 
                     <!-- Trust Micro-Badges -->
                     <div class="pt-6 border-t border-gray-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
                         <div>
-                            <div class="font-oswald text-2xl font-bold text-white">500K+</div>
-                            <div class="text-xs text-gray-400">People Mentored</div>
+                            <div class="font-oswald text-2xl font-bold text-white">{{ $siteSettings['hero_stat1_value'] ?? '500K+' }}</div>
+                            <div class="text-xs text-gray-400">{{ $siteSettings['hero_stat1_label'] ?? 'People Mentored' }}</div>
                         </div>
                         <div>
-                            <div class="font-oswald text-2xl font-bold text-[#ff8421]">1 Billion+</div>
-                            <div class="text-xs text-gray-400">Digital Views</div>
+                            <div class="font-oswald text-2xl font-bold text-[#ff8421]">{{ $siteSettings['hero_stat2_value'] ?? '1 Billion+' }}</div>
+                            <div class="text-xs text-gray-400">{{ $siteSettings['hero_stat2_label'] ?? 'Digital Views' }}</div>
                         </div>
                         <div>
-                            <div class="font-oswald text-2xl font-bold text-white">4.9 / 5.0</div>
-                            <div class="text-xs text-gray-400">Student Rating ★★★★★</div>
+                            <div class="font-oswald text-2xl font-bold text-white">{{ $siteSettings['hero_stat3_value'] ?? '4.9 / 5.0' }}</div>
+                            <div class="text-xs text-gray-400">{{ $siteSettings['hero_stat3_label'] ?? 'Student Rating ★★★★★' }}</div>
                         </div>
                     </div>
                 </div>
@@ -254,39 +260,58 @@
                         <div class="relative bg-[#10131c] rounded-2xl overflow-hidden border border-white/10 shadow-2xl aspect-[4/4.8] flex flex-col justify-end p-6">
                             
                             <!-- Stylized Speaker Profile Graphic -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#090b10] via-transparent to-black/30 z-10"></div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#090b10] via-transparent to-black/30 z-10 pointer-events-none"></div>
                             
-                            <!-- Background Pattern & Illustration Placeholder -->
+                            <!-- Background Pattern & Speaker Avatar / Photo -->
                             <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 via-[#181c29] to-black">
                                 <div class="text-center p-8 space-y-4">
-                                    <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-[#df3243] to-[#ff8421] p-1 shadow-2xl">
-                                        <div class="w-full h-full rounded-full bg-[#121520] flex items-center justify-center text-white font-oswald text-4xl font-black">
-                                            OG
+                                    @if (!empty($siteSettings['hero_speaker_image']) && \Illuminate\Support\Facades\Storage::disk('public')->exists($siteSettings['hero_speaker_image']))
+                                        <div class="w-32 h-32 mx-auto rounded-full p-1 bg-gradient-to-tr from-[#df3243] to-[#ff8421] shadow-2xl">
+                                            <img src="{{ asset('storage/' . $siteSettings['hero_speaker_image']) }}" class="w-full h-full object-cover rounded-full" alt="{{ $siteSettings['hero_speaker_name'] ?? 'Osman Gani' }}">
                                         </div>
-                                    </div>
+                                    @else
+                                        <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-[#df3243] to-[#ff8421] p-1 shadow-2xl">
+                                            <div class="w-full h-full rounded-full bg-[#121520] flex items-center justify-center text-white font-oswald text-4xl font-black">
+                                                OG
+                                            </div>
+                                        </div>
+                                    @endif
                                     <div class="space-y-1">
-                                        <div class="font-oswald text-2xl text-white font-bold tracking-wide">OSMAN GANI</div>
-                                        <div class="text-xs text-amber-400 font-semibold uppercase tracking-widest">#1 High Performance Coach</div>
+                                        <div class="font-oswald text-2xl text-white font-bold tracking-wide uppercase">{{ $siteSettings['hero_speaker_name'] ?? 'OSMAN GANI' }}</div>
+                                        <div class="text-xs text-amber-400 font-semibold uppercase tracking-widest">{{ $siteSettings['hero_speaker_title'] ?? '#1 High Performance Coach' }}</div>
                                     </div>
                                     <div class="inline-flex items-center gap-1.5 px-3 py-1 bg-red-600/20 text-red-300 rounded-full text-xs">
                                         <i class="fa-solid fa-award"></i>
-                                        <span>Bestselling Author of 5+ Books</span>
+                                        <span>{{ $siteSettings['hero_speaker_badge'] ?? 'Bestselling Author of 5+ Books' }}</span>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Interactive Video Play Trigger Overlay -->
-                            <div class="relative z-20 bg-black/60 backdrop-blur-md rounded-xl p-4 border border-white/10 flex items-center justify-between">
+                            @php
+                                $videoType = $siteSettings['hero_video_type'] ?? 'youtube';
+                                $hasUploadedVideo = !empty($siteSettings['hero_video_file']) && \Illuminate\Support\Facades\Storage::disk('public')->exists($siteSettings['hero_video_file']);
+                                $activeVideoType = ($videoType === 'upload' && $hasUploadedVideo) ? 'upload' : 'youtube';
+                                $ytRawUrl = $siteSettings['hero_video_youtube_url'] ?? 'https://www.youtube.com/watch?v=8GExpo8Y2gQ';
+                                $embedUrl = \App\Models\SiteSetting::formatYouTubeEmbedUrl($ytRawUrl);
+                                $uploadedVideoUrl = $hasUploadedVideo ? asset('storage/' . $siteSettings['hero_video_file']) : '';
+                            @endphp
+                            <div class="relative z-20 bg-black/70 backdrop-blur-md rounded-xl p-4 border border-white/10 flex items-center justify-between">
                                 <div class="flex items-center gap-3">
-                                    <button id="open-video-btn" class="w-12 h-12 rounded-full bg-[#df3243] hover:bg-[#b81b2b] text-white flex items-center justify-center shadow-lg shadow-red-600/40 transform hover:scale-110 transition duration-200" aria-label="Play Welcome Video">
+                                    <button id="open-video-btn"
+                                        type="button"
+                                        data-video-type="{{ $activeVideoType }}"
+                                        data-youtube-url="{{ $embedUrl }}"
+                                        data-upload-url="{{ $uploadedVideoUrl }}"
+                                        class="w-12 h-12 rounded-full bg-[#df3243] hover:bg-[#b81b2b] text-white flex items-center justify-center shadow-lg shadow-red-600/40 transform hover:scale-110 transition duration-200 cursor-pointer" aria-label="Play Welcome Video">
                                         <i class="fa-solid fa-play text-sm ml-0.5"></i>
                                     </button>
                                     <div>
-                                        <div class="text-xs text-gray-300 uppercase tracking-wider font-semibold">Watch Message</div>
-                                        <div class="text-sm font-oswald font-bold text-white">How To 10x Your Life &amp; Career</div>
+                                        <div class="text-xs text-gray-300 uppercase tracking-wider font-semibold">{{ $siteSettings['hero_video_label'] ?? 'Watch Message' }}</div>
+                                        <div class="text-sm font-oswald font-bold text-white">{{ $siteSettings['hero_video_title'] ?? 'How To 10x Your Life & Career' }}</div>
                                     </div>
                                 </div>
-                                <span class="text-xs text-amber-400 font-bold bg-amber-400/10 px-2 py-1 rounded">2 min</span>
+                                <span class="text-xs text-amber-400 font-bold bg-amber-400/10 px-2 py-1 rounded">{{ $siteSettings['hero_video_duration'] ?? '2 min' }}</span>
                             </div>
 
                         </div>
@@ -303,12 +328,16 @@
     <section class="bg-black text-white py-6 border-b border-[#df3243]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="font-oswald font-semibold text-lg sm:text-2xl md:text-3xl tracking-wide uppercase text-white/95">
-                Results <span class="text-[#df3243] mx-1 font-black">|</span> 
-                Happiness <span class="text-[#df3243] mx-1 font-black">|</span> 
-                Success <span class="text-[#df3243] mx-1 font-black">|</span> 
-                Career Growth <span class="text-[#df3243] mx-1 font-black">|</span> 
-                Business Multiplication <span class="text-[#df3243] mx-1 font-black">|</span> 
-                Leadership
+                @php
+                    $motto = $siteSettings['hero_motto_text'] ?? 'Results | Happiness | Success | Career Growth | Business Multiplication | Leadership';
+                    $words = array_map('trim', explode('|', $motto));
+                @endphp
+                @foreach ($words as $index => $word)
+                    @if ($index > 0)
+                        <span class="text-[#df3243] mx-1 font-black">|</span>
+                    @endif
+                    <span>{{ $word }}</span>
+                @endforeach
             </h2>
         </div>
     </section>
@@ -1130,11 +1159,18 @@
     <!-- ======================================================== -->
     <div id="video-modal" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
         <div class="relative w-full max-w-4xl bg-black rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
-            <button id="close-video-btn" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-black flex items-center justify-center transition" aria-label="Close Video">
+            <button id="close-video-btn" class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-white/20 hover:bg-white text-white hover:text-black flex items-center justify-center transition cursor-pointer" aria-label="Close Video">
                 <i class="fa-solid fa-xmark text-lg"></i>
             </button>
-            <div class="aspect-video w-full">
-                <iframe id="modal-video-iframe" class="w-full h-full" src="" title="Osman Gani Welcome Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="aspect-video w-full bg-black flex items-center justify-center">
+                <!-- YouTube Iframe Player -->
+                <iframe id="modal-video-iframe" class="w-full h-full hidden" src="" title="Osman Gani Welcome Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <!-- MP4 HTML5 Video Player -->
+                <video id="modal-html5-video" class="w-full h-full hidden bg-black" controls playsinline preload="metadata">
+                    <source id="modal-video-source" src="" type="video/mp4">
+                    Your browser does not support HTML5 video playback.
+                </video>
             </div>
         </div>
     </div>
@@ -1154,36 +1190,84 @@
                 });
             }
 
-            // Video Modal Handlers
+            // Video Modal Handlers (YouTube and MP4 Upload)
             const openVideoBtn = document.getElementById('open-video-btn');
             const closeVideoBtn = document.getElementById('close-video-btn');
             const videoModal = document.getElementById('video-modal');
             const videoIframe = document.getElementById('modal-video-iframe');
+            const html5Video = document.getElementById('modal-html5-video');
+            const html5Source = document.getElementById('modal-video-source');
 
-            const videoUrl = "https://www.youtube.com/embed/8GExpo8Y2gQ?autoplay=1";
+            function closeModal() {
+                if (videoIframe) {
+                    videoIframe.src = "";
+                    videoIframe.classList.add('hidden');
+                }
+                if (html5Video) {
+                    html5Video.pause();
+                    html5Video.currentTime = 0;
+                    if (html5Source) {
+                        html5Source.src = "";
+                    }
+                    html5Video.load();
+                    html5Video.classList.add('hidden');
+                }
+                if (videoModal) {
+                    videoModal.classList.add('hidden');
+                }
+            }
 
-            if (openVideoBtn && videoModal && videoIframe) {
+            if (openVideoBtn && videoModal) {
                 openVideoBtn.addEventListener('click', function () {
-                    videoIframe.src = videoUrl;
+                    const videoType = openVideoBtn.getAttribute('data-video-type') || 'youtube';
+                    const ytUrl = openVideoBtn.getAttribute('data-youtube-url');
+                    const uploadUrl = openVideoBtn.getAttribute('data-upload-url');
+
+                    if (videoType === 'upload' && uploadUrl) {
+                        if (videoIframe) {
+                            videoIframe.classList.add('hidden');
+                            videoIframe.src = "";
+                        }
+                        if (html5Video && html5Source) {
+                            html5Source.src = uploadUrl;
+                            html5Video.load();
+                            html5Video.classList.remove('hidden');
+                            html5Video.play().catch(function (e) {
+                                console.log('Autoplay prevented:', e);
+                            });
+                        }
+                    } else if (ytUrl) {
+                        if (html5Video) {
+                            html5Video.pause();
+                            html5Video.classList.add('hidden');
+                        }
+                        if (videoIframe) {
+                            videoIframe.src = ytUrl;
+                            videoIframe.classList.remove('hidden');
+                        }
+                    }
+
                     videoModal.classList.remove('hidden');
                 });
             }
 
-            if (closeVideoBtn && videoModal && videoIframe) {
-                closeVideoBtn.addEventListener('click', function () {
-                    videoIframe.src = "";
-                    videoModal.classList.add('hidden');
-                });
+            if (closeVideoBtn) {
+                closeVideoBtn.addEventListener('click', closeModal);
             }
 
-            if (videoModal && videoIframe) {
+            if (videoModal) {
                 videoModal.addEventListener('click', function (e) {
                     if (e.target === videoModal) {
-                        videoIframe.src = "";
-                        videoModal.classList.add('hidden');
+                        closeModal();
                     }
                 });
             }
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && videoModal && !videoModal.classList.contains('hidden')) {
+                    closeModal();
+                }
+            });
 
             // Newsletter / Lead Magnet Form Submission
             const leadForm = document.getElementById('lead-form');

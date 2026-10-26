@@ -71,6 +71,11 @@
                     <span>Dashboard</span>
                 </a>
 
+                <a href="{{ route('admin.homepage.index') }}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition {{ request()->routeIs('admin.homepage.*') ? 'nav-link-active text-white' : '' }}">
+                    <i class="fa-solid fa-house-laptop w-5 text-center {{ request()->routeIs('admin.homepage.*') ? 'text-[#df3243]' : 'text-gray-400' }}"></i>
+                    <span>Home Page</span>
+                </a>
+
                 <a href="{{ route('admin.books.index') }}" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition {{ request()->routeIs('admin.books.*') ? 'nav-link-active text-white' : '' }}">
                     <i class="fa-solid fa-book-open w-5 text-center {{ request()->routeIs('admin.books.*') ? 'text-[#df3243]' : 'text-gray-400' }}"></i>
                     <span>Books</span>

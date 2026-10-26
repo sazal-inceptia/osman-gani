@@ -42,8 +42,36 @@ class DatabaseSeeder extends Seeder
             ['key' => 'instagram_url', 'value' => 'https://instagram.com', 'group' => 'social', 'label' => 'Instagram URL', 'type' => 'url'],
             ['key' => 'youtube_url', 'value' => 'https://youtube.com', 'group' => 'social', 'label' => 'YouTube Channel URL', 'type' => 'url'],
             ['key' => 'whatsapp_url', 'value' => 'https://whatsapp.com', 'group' => 'social', 'label' => 'WhatsApp Contact Link', 'type' => 'url'],
-            ['key' => 'hero_heading', 'value' => 'Transform Your Mindset, Multiply Your Business', 'group' => 'hero', 'label' => 'Hero Headline', 'type' => 'text'],
-            ['key' => 'hero_tagline', 'value' => 'Bestselling author, keynote speaker, and business coach mentoring 500,000+ leaders across 50+ countries.', 'group' => 'hero', 'label' => 'Hero Subtitle', 'type' => 'textarea'],
+            // Homepage Hero Settings
+            ['key' => 'hero_badge', 'value' => 'Global Transformation & Business Mastery', 'group' => 'hero', 'label' => 'Hero Badge Text', 'type' => 'text'],
+            ['key' => 'hero_heading_line1', 'value' => 'Transform Your', 'group' => 'hero', 'label' => 'Heading Line 1', 'type' => 'text'],
+            ['key' => 'hero_heading_highlight1', 'value' => 'Mindset', 'group' => 'hero', 'label' => 'Highlighted Word 1', 'type' => 'text'],
+            ['key' => 'hero_heading_line2', 'value' => ', Multiply Your', 'group' => 'hero', 'label' => 'Heading Line 2', 'type' => 'text'],
+            ['key' => 'hero_heading_highlight2', 'value' => 'Business', 'group' => 'hero', 'label' => 'Highlighted Word 2', 'type' => 'text'],
+            ['key' => 'hero_tagline', 'value' => 'A master of personal and business breakthrough, Osman Gani has been inspiring and equipping entrepreneurs, leaders, and youth across 50+ countries to unlock peak potential, lead with authority, and 10x their achievements.', 'group' => 'hero', 'label' => 'Hero Description', 'type' => 'textarea'],
+            ['key' => 'hero_btn_primary_text', 'value' => 'Explore Courses & Books', 'group' => 'hero', 'label' => 'Primary Button Text', 'type' => 'text'],
+            ['key' => 'hero_btn_primary_url', 'value' => '/courses', 'group' => 'hero', 'label' => 'Primary Button URL', 'type' => 'text'],
+            ['key' => 'hero_btn_secondary_text', 'value' => 'Invite For Keynote', 'group' => 'hero', 'label' => 'Secondary Button Text', 'type' => 'text'],
+            ['key' => 'hero_btn_secondary_url', 'value' => '/speaking', 'group' => 'hero', 'label' => 'Secondary Button URL', 'type' => 'text'],
+            ['key' => 'hero_stat1_value', 'value' => '500K+', 'group' => 'hero', 'label' => 'Stat 1 Value', 'type' => 'text'],
+            ['key' => 'hero_stat1_label', 'value' => 'People Mentored', 'group' => 'hero', 'label' => 'Stat 1 Label', 'type' => 'text'],
+            ['key' => 'hero_stat2_value', 'value' => '1 Billion+', 'group' => 'hero', 'label' => 'Stat 2 Value', 'type' => 'text'],
+            ['key' => 'hero_stat2_label', 'value' => 'Digital Views', 'group' => 'hero', 'label' => 'Stat 2 Label', 'type' => 'text'],
+            ['key' => 'hero_stat3_value', 'value' => '4.9 / 5.0', 'group' => 'hero', 'label' => 'Stat 3 Value', 'type' => 'text'],
+            ['key' => 'hero_stat3_label', 'value' => 'Student Rating ★★★★★', 'group' => 'hero', 'label' => 'Stat 3 Label', 'type' => 'text'],
+            // Hero Video Settings
+            ['key' => 'hero_video_type', 'value' => 'youtube', 'group' => 'hero', 'label' => 'Video Type (youtube / upload)', 'type' => 'text'],
+            ['key' => 'hero_video_youtube_url', 'value' => 'https://www.youtube.com/watch?v=8GExpo8Y2gQ', 'group' => 'hero', 'label' => 'YouTube Video URL', 'type' => 'text'],
+            ['key' => 'hero_video_file', 'value' => null, 'group' => 'hero', 'label' => 'Uploaded MP4 Video File', 'type' => 'text'],
+            ['key' => 'hero_video_title', 'value' => 'How To 10x Your Life & Career', 'group' => 'hero', 'label' => 'Video Card Title', 'type' => 'text'],
+            ['key' => 'hero_video_duration', 'value' => '2 min', 'group' => 'hero', 'label' => 'Video Card Duration', 'type' => 'text'],
+            ['key' => 'hero_video_label', 'value' => 'Watch Message', 'group' => 'hero', 'label' => 'Video Card Top Label', 'type' => 'text'],
+            // Hero Speaker Card
+            ['key' => 'hero_speaker_name', 'value' => 'OSMAN GANI', 'group' => 'hero', 'label' => 'Speaker Card Name', 'type' => 'text'],
+            ['key' => 'hero_speaker_title', 'value' => '#1 High Performance Coach', 'group' => 'hero', 'label' => 'Speaker Card Subtitle', 'type' => 'text'],
+            ['key' => 'hero_speaker_badge', 'value' => 'Bestselling Author of 5+ Books', 'group' => 'hero', 'label' => 'Speaker Card Badge', 'type' => 'text'],
+            ['key' => 'hero_speaker_image', 'value' => null, 'group' => 'hero', 'label' => 'Speaker Card Custom Photo', 'type' => 'text'],
+            ['key' => 'hero_motto_text', 'value' => 'Results | Happiness | Success | Career Growth | Business Multiplication | Leadership', 'group' => 'hero', 'label' => 'Hero Motto Banner', 'type' => 'text'],
         ];
 
         foreach ($settings as $setting) {
