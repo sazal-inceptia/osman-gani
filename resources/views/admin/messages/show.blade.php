@@ -17,19 +17,19 @@
         <div class="glass-card rounded-2xl p-8 border border-gray-800">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pb-6 border-b border-gray-800">
                 <div class="flex items-center gap-4">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#df3243] to-[#800d18] flex items-center justify-center text-white text-2xl font-bold font-oswald shadow-lg shadow-red-950/50">
+                    <div class="w-14 h-14 rounded-2xl bg-[#c92a2a] flex items-center justify-center text-white text-2xl font-bold font-oswald shadow-md">
                         {{ strtoupper(substr($message->name, 0, 1)) }}
                     </div>
                     <div>
                         <h3 class="font-oswald text-2xl font-bold text-white">{{ $message->name }}</h3>
                         <div class="flex flex-wrap items-center gap-3 text-xs text-gray-400 mt-1">
-                            <a href="mailto:{{ $message->email }}" class="hover:text-[#df3243] transition flex items-center gap-1 font-mono">
-                                <i class="fa-solid fa-envelope text-[#df3243]"></i> {{ $message->email }}
+                            <a href="mailto:{{ $message->email }}" class="hover:text-[#c92a2a] transition flex items-center gap-1 font-mono">
+                                <i class="fa-solid fa-envelope text-[#c92a2a]"></i> {{ $message->email }}
                             </a>
                             @if ($message->phone)
                                 <span>•</span>
-                                <a href="tel:{{ $message->phone }}" class="hover:text-[#df3243] transition flex items-center gap-1 font-mono">
-                                    <i class="fa-solid fa-phone text-[#df3243]"></i> {{ $message->phone }}
+                                <a href="tel:{{ $message->phone }}" class="hover:text-[#c92a2a] transition flex items-center gap-1 font-mono">
+                                    <i class="fa-solid fa-phone text-[#c92a2a]"></i> {{ $message->phone }}
                                 </a>
                             @endif
                         </div>

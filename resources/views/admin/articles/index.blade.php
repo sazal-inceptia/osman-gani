@@ -44,7 +44,7 @@
                             <td class="p-4 text-gray-400 font-mono">{{ $article->published_at ? $article->published_at->format('M d, Y') : 'Draft' }}</td>
                             <td class="p-4">
                                 @if ($article->is_featured)
-                                    <span class="bg-red-600/20 text-[#df3243] border border-red-500/30 px-2.5 py-0.5 rounded-full text-[10px] font-bold">
+                                    <span class="bg-red-600/20 text-[#c92a2a] border border-red-500/30 px-2.5 py-0.5 rounded-full text-[10px] font-bold">
                                         ★ Featured
                                     </span>
                                 @else

@@ -14,48 +14,48 @@
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Book Title *</label>
                     <input type="text" name="title" value="{{ old('title') }}" required placeholder="e.g. ACHIEVE MORE, SUCCEED FASTER"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Subtitle / Tagline</label>
                     <input type="text" name="subtitle" value="{{ old('subtitle') }}" placeholder="e.g. The Proven Blueprint For Total Life, Sales & Business Breakthrough"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Price Display</label>
                     <input type="text" name="price" value="{{ old('price', '$14.99 / ৳650') }}" placeholder="e.g. $14.99 / ৳650"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Languages</label>
                     <input type="text" name="languages" value="{{ old('languages', 'English, Bengali') }}" placeholder="e.g. English, Bengali, Hindi"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Amazon / Buy Link URL</label>
                     <input type="url" name="buy_link" value="{{ old('buy_link', 'https://amazon.com') }}" placeholder="https://amazon.com/..."
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Display Sort Order</label>
                     <input type="number" name="sort_order" value="{{ old('sort_order', 1) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Description</label>
                     <textarea name="description" rows="4" placeholder="Brief summary of the book content and core takeaways..."
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">{{ old('description') }}</textarea>
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">{{ old('description') }}</textarea>
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="inline-flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" name="is_bestseller" value="1" {{ old('is_bestseller', 1) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#df3243]">
+                        <input type="checkbox" name="is_bestseller" value="1" {{ old('is_bestseller', 1) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#c92a2a]">
                         <span class="text-xs text-gray-300 font-semibold">Mark as Bestseller badge</span>
                     </label>
                 </div>

@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initGsapScrollAnimations();
     initStickyHeader();
     initScrollProgressBar();
-    initAmbientOrbs();
 });
 
 // Refresh ScrollTrigger when all assets/images are fully loaded
@@ -349,23 +348,5 @@ function initScrollProgressBar() {
         onUpdate: (self) => {
             progressBar.style.width = `${Math.min(100, Math.max(0, self.progress * 100)).toFixed(2)}%`;
         },
-    });
-}
-
-/* ---------------- 6. Ambient Floating Glowing Orbs ---------------- */
-function initAmbientOrbs() {
-    const glowOrbs = document.querySelectorAll(
-        '.bg-\\[\\#df3243\\]\\/15, .bg-\\[\\#ff8421\\]\\/10, .bg-\\[\\#df3243\\]\\/20'
-    );
-
-    glowOrbs.forEach((orb, index) => {
-        gsap.to(orb, {
-            y: index % 2 === 0 ? -20 : 18,
-            x: index % 2 === 0 ? 12 : -12,
-            duration: 6 + index * 1.5,
-            repeat: -1,
-            yoyo: true,
-            ease: 'sine.inOut',
-        });
     });
 }

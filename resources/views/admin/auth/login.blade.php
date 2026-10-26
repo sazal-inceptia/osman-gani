@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-[#050608]">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full bg-[#0c0d12]">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,27 +19,16 @@
         .font-oswald { font-family: 'Oswald', sans-serif; }
         .font-montserrat { font-family: 'Montserrat', sans-serif; }
         .font-ubuntu { font-family: 'Ubuntu', sans-serif; }
-        
-        .glass-panel {
-            background: rgba(18, 22, 32, 0.85);
-            backdrop-filter: blur(16px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
-        }
     </style>
 </head>
-<body class="h-full text-gray-200 font-ubuntu antialiased flex items-center justify-center p-4 relative overflow-hidden bg-radial from-[#151a26] via-[#080a0f] to-[#030406]">
-
-    <!-- Background Atmospheric Glows -->
-    <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#df3243]/20 rounded-full blur-[140px] pointer-events-none"></div>
-    <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-[#ff8421]/15 rounded-full blur-[140px] pointer-events-none"></div>
+<body class="min-h-full text-gray-200 font-ubuntu antialiased flex items-center justify-center p-6 bg-[#0c0d12]">
 
     <div class="w-full max-w-md relative z-10 space-y-6">
         
         <!-- Header Brand -->
-        <div class="text-center space-y-2">
+        <div class="text-center space-y-3">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-3 group">
-                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#df3243] to-[#800d18] flex items-center justify-center text-white shadow-xl shadow-red-950/60 font-oswald text-2xl font-bold border border-red-400/30 group-hover:scale-105 transition duration-300">
+                <div class="w-12 h-12 rounded-xl bg-[#c92a2a] flex items-center justify-center text-white font-oswald text-2xl font-bold shadow-md group-hover:bg-[#a51d24] transition duration-200">
                     OG
                 </div>
                 <div class="text-left">
@@ -52,27 +41,27 @@
         </div>
 
         <!-- Login Card -->
-        <div class="glass-panel rounded-3xl p-8 border border-gray-800/80">
+        <div class="bg-[#12141c] rounded-2xl p-8 border border-gray-800 shadow-2xl">
             
             @if (session('success'))
-                <div class="mb-5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-4 py-3 rounded-xl text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-circle-check"></i>
+                <div class="mb-5 bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 px-4 py-3 rounded-xl text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-emerald-400"></i>
                     <span>{{ session('success') }}</span>
                 </div>
             @endif
 
             @if (session('error'))
-                <div class="mb-5 bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3 rounded-xl text-xs flex items-center gap-2">
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                <div class="mb-5 bg-red-950/40 border border-red-500/30 text-red-300 px-4 py-3 rounded-xl text-xs flex items-center gap-2">
+                    <i class="fa-solid fa-triangle-exclamation text-red-400"></i>
                     <span>{{ session('error') }}</span>
                 </div>
             @endif
 
             @if ($errors->any())
-                <div class="mb-5 bg-red-500/10 border border-red-500/30 text-red-400 px-4 py-3 rounded-xl text-xs space-y-1">
+                <div class="mb-5 bg-red-950/40 border border-red-500/30 text-red-300 px-4 py-3 rounded-xl text-xs space-y-1">
                     @foreach ($errors->all() as $error)
                         <div class="flex items-center gap-2">
-                            <i class="fa-solid fa-circle-xmark"></i>
+                            <i class="fa-solid fa-circle-xmark text-red-400"></i>
                             <span>{{ $error }}</span>
                         </div>
                     @endforeach
@@ -89,7 +78,7 @@
                             <i class="fa-solid fa-envelope"></i>
                         </span>
                         <input type="email" id="email" name="email" value="{{ old('email', 'admin@osmangani.com') }}" required autofocus
-                            class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243] focus:ring-1 focus:ring-[#df3243] transition">
+                            class="w-full bg-[#0a0b10] border border-gray-800 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a] focus:ring-1 focus:ring-[#c92a2a] transition">
                     </div>
                 </div>
 
@@ -102,26 +91,26 @@
                             <i class="fa-solid fa-lock"></i>
                         </span>
                         <input type="password" id="password" name="password" value="password123" required
-                            class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243] focus:ring-1 focus:ring-[#df3243] transition">
+                            class="w-full bg-[#0a0b10] border border-gray-800 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a] focus:ring-1 focus:ring-[#c92a2a] transition">
                     </div>
                 </div>
 
                 <div class="flex items-center justify-between pt-1">
                     <label class="inline-flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" name="remember" class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#df3243] focus:ring-0">
+                        <input type="checkbox" name="remember" class="w-4 h-4 rounded bg-[#0a0b10] border-gray-700 text-[#c92a2a] focus:ring-0">
                         <span class="text-xs text-gray-400">Remember session</span>
                     </label>
                 </div>
 
-                <button type="submit" class="w-full btn-pill-filled-red text-sm font-semibold justify-center py-3.5 mt-2 shadow-lg shadow-red-600/30">
+                <button type="submit" class="w-full bg-[#c92a2a] hover:bg-[#a51d24] text-white text-sm font-semibold justify-center py-3.5 rounded-full flex items-center gap-2 transition duration-200 mt-2 shadow-md">
                     <span>Sign In</span>
                     <i class="fa-solid fa-arrow-right-long text-xs ml-1"></i>
                 </button>
             </form>
 
             <!-- Quick Demo Credentials Hint -->
-            <div class="mt-6 pt-5 border-t border-gray-800/80 text-center">
-                <div class="bg-white/5 border border-white/10 rounded-xl p-3 text-left space-y-1">
+            <div class="mt-6 pt-5 border-t border-gray-800 text-center">
+                <div class="bg-gray-900/60 border border-gray-800 rounded-xl p-3 text-left space-y-1">
                     <div class="text-[11px] font-bold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
                         <i class="fa-solid fa-key"></i> Default Administrator Credentials
                     </div>

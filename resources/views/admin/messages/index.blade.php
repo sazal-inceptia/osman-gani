@@ -28,7 +28,7 @@
                             <td class="p-4">
                                 <div class="font-bold text-white text-sm flex items-center gap-2">
                                     @if (! $msg->is_read)
-                                        <span class="w-2 h-2 rounded-full bg-[#df3243]"></span>
+                                        <span class="w-2 h-2 rounded-full bg-[#c92a2a]"></span>
                                     @endif
                                     <span>{{ $msg->name }}</span>
                                 </div>
@@ -46,7 +46,7 @@
                             <td class="p-4 text-gray-400 font-mono">{{ $msg->created_at->format('M d, Y h:i A') }}</td>
                             <td class="p-4">
                                 @if (! $msg->is_read)
-                                    <span class="bg-[#df3243] text-white px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">
+                                    <span class="bg-[#c92a2a] text-white px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">
                                         Unread
                                     </span>
                                 @else

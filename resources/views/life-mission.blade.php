@@ -57,21 +57,20 @@
             opacity: 0.95;
         }
 
-        /* Ambient glowing gradient cards */
+        /* Clean Editorial Narrative Card */
         .glass-card {
-            background: rgba(18, 22, 32, 0.75);
-            backdrop-filter: blur(12px);
+            background: #11131a;
             border: 1px solid rgba(255, 255, 255, 0.08);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
         .glass-card:hover {
-            border-color: rgba(223, 50, 67, 0.4);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.7);
+            border-color: rgba(201, 42, 42, 0.5);
+            transform: translateY(-2px);
         }
     </style>
 </head>
-<body class="bg-[#050608] text-gray-200 font-ubuntu antialiased selection:bg-[#df3243] selection:text-white">
+<body class="bg-[#050608] text-gray-200 font-ubuntu antialiased selection:bg-[#c92a2a] selection:text-white">
 
     <!-- ======================================================== -->
     <!-- 1. TOP ANNOUNCEMENT / UTILITY BAR -->
@@ -81,13 +80,13 @@
             
             <!-- Direct Contact & Social Links -->
             <div class="flex items-center gap-4">
-                <a href="tel:+8801700000000" class="inline-flex items-center gap-1.5 font-medium hover:text-[#df3243] transition">
-                    <i class="fa-solid fa-phone text-[#df3243]"></i>
+                <a href="tel:+8801700000000" class="inline-flex items-center gap-1.5 font-medium hover:text-[#c92a2a] transition">
+                    <i class="fa-solid fa-phone text-[#c92a2a]"></i>
                     <span>+880 1700-000000</span>
                 </a>
                 <span class="text-gray-600 hidden sm:inline">|</span>
-                <a href="mailto:support@osmangani.com" class="inline-flex items-center gap-1.5 font-medium hover:text-[#df3243] transition">
-                    <i class="fa-solid fa-envelope text-[#df3243]"></i>
+                <a href="mailto:support@osmangani.com" class="inline-flex items-center gap-1.5 font-medium hover:text-[#c92a2a] transition">
+                    <i class="fa-solid fa-envelope text-[#c92a2a]"></i>
                     <span class="hidden sm:inline">support@osmangani.com</span>
                 </a>
                 
@@ -101,7 +100,7 @@
 
             <!-- Highlights / Notification Banner -->
             <div class="text-center md:text-left flex items-center gap-2">
-                <span class="bg-[#df3243] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider animate-pulse">Life Mission</span>
+                <span class="bg-[#c92a2a] text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider animate-pulse">Life Mission</span>
                 <span class="font-semibold text-gray-200">
                     "Inspiring &amp; Empowering 10 Million Lives Worldwide"
                 </span>
@@ -109,10 +108,10 @@
 
             <!-- Login / Support Link -->
             <div class="flex items-center gap-3">
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-1 text-gray-300 hover:text-white border border-gray-700 hover:border-[#df3243] px-3 py-1 rounded-md text-xs transition">
+                <a href="{{ route('contact') }}" class="inline-flex items-center gap-1 text-gray-300 hover:text-white border border-gray-700 hover:border-[#c92a2a] px-3 py-1 rounded-md text-xs transition">
                     <i class="fa-solid fa-headset text-[10px]"></i>
                     <span>Contact Support</span>
-                    <i class="fa-solid fa-chevron-right text-[9px] text-[#df3243]"></i>
+                    <i class="fa-solid fa-chevron-right text-[9px] text-[#c92a2a]"></i>
                 </a>
             </div>
         </div>
@@ -122,17 +121,17 @@
     <!-- ======================================================== -->
     <!-- 2. STICKY MAIN HEADER & NAVIGATION -->
     <!-- ======================================================== -->
-    <header class="sticky top-0 z-50 bg-[#000000] border-b-2 border-[#df3243] shadow-xl">
+    <header class="sticky top-0 z-50 bg-[#0c0d12] border-b-2 border-[#c92a2a] shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
                 <!-- Brand Signature Logo -->
                 <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#df3243] to-[#800d18] flex items-center justify-center text-white shadow-lg shadow-red-950/60 font-oswald text-2xl font-bold border border-red-400/30 group-hover:scale-105 transition duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-[#c92a2a] flex items-center justify-center text-white font-oswald text-2xl font-bold shadow-md group-hover:bg-[#a51d24] transition duration-200">
                         OG
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-white font-oswald text-2xl tracking-wider font-bold group-hover:text-[#df3243] transition">
+                        <span class="text-white font-oswald text-2xl tracking-wider font-bold group-hover:text-[#c92a2a] transition">
                             OSMAN GANI
                         </span>
                         <span class="text-[10px] uppercase font-semibold text-gray-400 tracking-[0.2em] -mt-1">
@@ -146,63 +145,63 @@
                     
                     <!-- ABOUT Dropdown (Active) -->
                     <div class="relative group">
-                        <button class="text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>ABOUT</span>
-                            <i class="fa-solid fa-chevron-down text-[10px] text-[#df3243] group-hover:rotate-180 transition-transform duration-200"></i>
+                            <i class="fa-solid fa-chevron-down text-[10px] text-[#c92a2a] group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-56 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('about.osman-gani') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">OSMAN GANI</a>
-                            <a href="{{ route('about.media-events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">MEDIA &amp; EVENTS</a>
-                            <a href="{{ route('about.life-mission') }}" class="block px-4 py-2.5 text-xs font-semibold text-[#df3243] bg-red-50/80 transition">LIFE MISSION</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-56 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('about.osman-gani') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">OSMAN GANI</a>
+                            <a href="{{ route('about.media-events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">MEDIA &amp; EVENTS</a>
+                            <a href="{{ route('about.life-mission') }}" class="block px-4 py-2.5 text-xs font-semibold text-[#c92a2a] bg-red-50/80 transition">LIFE MISSION</a>
                         </div>
                     </div>
 
-                    <a href="{{ route('books') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">BOOKS</a>
-                    <a href="{{ route('speaking') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">SPEAKING</a>
+                    <a href="{{ route('books') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">BOOKS</a>
+                    <a href="{{ route('speaking') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">SPEAKING</a>
 
                     <!-- COURSES Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>COURSES</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('courses') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ALL MASTER COURSES</a>
-                            <a href="{{ route('courses') }}#course-ai" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">AI MASTERY PROGRAM</a>
-                            <a href="{{ route('courses') }}#course-sm" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">SOCIAL MEDIA &amp; BUSINESS</a>
-                            <a href="{{ route('courses') }}#course-time" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">TIME &amp; PRODUCTIVITY MASTERY</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('courses') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ALL MASTER COURSES</a>
+                            <a href="{{ route('courses') }}#course-ai" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">AI MASTERY PROGRAM</a>
+                            <a href="{{ route('courses') }}#course-sm" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">SOCIAL MEDIA &amp; BUSINESS</a>
+                            <a href="{{ route('courses') }}#course-time" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">TIME &amp; PRODUCTIVITY MASTERY</a>
                         </div>
                     </div>
 
                     <!-- EVENTS Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>EVENTS</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ALL UPCOMING EVENTS</a>
-                            <a href="{{ route('events') }}#trainer-bootcamp" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">TRAIN THE TRAINER BOOTCAMP</a>
-                            <a href="{{ route('events') }}#unleash-champion" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">UNLEASH THE CHAMPION IN YOU</a>
-                            <a href="{{ route('events') }}#public-speaking" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">PUBLIC SPEAKING &amp; INFLUENCE</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ALL UPCOMING EVENTS</a>
+                            <a href="{{ route('events') }}#trainer-bootcamp" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">TRAIN THE TRAINER BOOTCAMP</a>
+                            <a href="{{ route('events') }}#unleash-champion" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">UNLEASH THE CHAMPION IN YOU</a>
+                            <a href="{{ route('events') }}#public-speaking" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">PUBLIC SPEAKING &amp; INFLUENCE</a>
                         </div>
                     </div>
 
                     <!-- RESOURCES Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>RESOURCES</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-60 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('resources.free-videos') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">FREE VIDEO LIBRARY</a>
-                            <a href="{{ route('resources.ebooks') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">FREE E-BOOKS &amp; GUIDES</a>
-                            <a href="{{ route('resources.tools') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">PRODUCTIVITY TOOLS</a>
-                            <a href="{{ route('resources.blog') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ARTICLES &amp; BLOG</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-60 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('resources.free-videos') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">FREE VIDEO LIBRARY</a>
+                            <a href="{{ route('resources.ebooks') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">FREE E-BOOKS &amp; GUIDES</a>
+                            <a href="{{ route('resources.tools') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">PRODUCTIVITY TOOLS</a>
+                            <a href="{{ route('resources.blog') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ARTICLES &amp; BLOG</a>
                         </div>
                     </div>
 
-                    <a href="{{ route('contact') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">CONTACT</a>
+                    <a href="{{ route('contact') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">CONTACT</a>
                 </nav>
 
                 <!-- Action Button & Mobile Toggle -->
@@ -213,7 +212,7 @@
                     </a>
 
                     <!-- Mobile Hamburger Button -->
-                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-white hover:text-[#df3243] hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation">
+                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-white hover:text-[#c92a2a] hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -223,15 +222,15 @@
         <!-- Mobile Drawer Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-[#090b10] border-t border-gray-800 px-5 py-6 space-y-4">
             <div class="flex flex-col space-y-3 font-montserrat text-sm font-semibold text-gray-200">
-                <a href="{{ route('about.osman-gani') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">ABOUT OSMAN GANI</a>
-                <a href="{{ route('about.media-events') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">MEDIA &amp; EVENTS</a>
-                <a href="{{ route('about.life-mission') }}" class="text-[#df3243] py-1 border-b border-gray-800/60">LIFE MISSION</a>
-                <a href="{{ route('books') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">BOOKS</a>
-                <a href="{{ route('speaking') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">SPEAKING</a>
-                <a href="{{ route('courses') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">COURSES</a>
-                <a href="{{ route('events') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">EVENTS</a>
-                <a href="{{ route('resources.free-videos') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">FREE RESOURCES</a>
-                <a href="{{ route('contact') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">CONTACT US</a>
+                <a href="{{ route('about.osman-gani') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">ABOUT OSMAN GANI</a>
+                <a href="{{ route('about.media-events') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">MEDIA &amp; EVENTS</a>
+                <a href="{{ route('about.life-mission') }}" class="text-[#c92a2a] py-1 border-b border-gray-800/60">LIFE MISSION</a>
+                <a href="{{ route('books') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">BOOKS</a>
+                <a href="{{ route('speaking') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">SPEAKING</a>
+                <a href="{{ route('courses') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">COURSES</a>
+                <a href="{{ route('events') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">EVENTS</a>
+                <a href="{{ route('resources.free-videos') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">FREE RESOURCES</a>
+                <a href="{{ route('contact') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">CONTACT US</a>
             </div>
             <div class="pt-4 flex flex-col gap-3">
                 <a href="{{ route('speaking') }}" class="btn-pill-filled-red text-center justify-center w-full">Book Keynote Session</a>
@@ -244,45 +243,39 @@
 
 
     <!-- ======================================================== -->
-    <!-- 3. HERO PHILOSOPHY BANNER (Deepak Bajaj Style Quote Header) -->
+    <!-- 3. HERO PHILOSOPHY BANNER -->
     <!-- ======================================================== -->
-    <section class="relative bg-gradient-to-b from-[#090b10] via-[#10141d] to-[#050608] text-white overflow-hidden py-20 sm:py-28 border-b border-gray-800">
-        <!-- Ambient Atmospheric Lights -->
-        <div class="absolute top-0 right-1/4 w-[600px] h-[350px] bg-[#df3243]/15 rounded-full blur-[140px] pointer-events-none"></div>
-        <div class="absolute bottom-0 left-10 w-[450px] h-[350px] bg-[#ff8421]/10 rounded-full blur-[120px] pointer-events-none"></div>
-        
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+    <section class="relative bg-[#0c0d12] text-white overflow-hidden py-20 sm:py-28 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
             
             <!-- Breadcrumbs -->
             <div class="flex items-center justify-center gap-2 text-xs font-montserrat tracking-widest uppercase text-gray-400 mb-8">
                 <a href="{{ route('home') }}" class="hover:text-white transition">Home</a>
-                <span class="text-[#df3243]">•</span>
+                <span class="text-[#c92a2a]">•</span>
                 <span class="text-gray-400">About</span>
-                <span class="text-[#df3243]">•</span>
-                <span class="text-[#df3243] font-bold">Life Mission</span>
+                <span class="text-[#c92a2a]">•</span>
+                <span class="text-[#c92a2a] font-bold">Life Mission</span>
             </div>
 
             <!-- Quote Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-950/60 border border-red-500/30 text-[#df3243] text-xs font-bold font-montserrat uppercase tracking-wider mb-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold font-montserrat uppercase tracking-wider mb-6">
                 <i class="fa-solid fa-quote-left text-sm"></i>
                 <span>Guiding Life Philosophy</span>
             </div>
 
             <!-- Inspiring Main Quote Heading -->
-            <h1 class="font-oswald text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-wide leading-tight sm:leading-none text-white max-w-5xl mx-auto drop-shadow-lg">
+            <h1 class="font-oswald text-3xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-wide leading-tight sm:leading-none text-white max-w-4xl mx-auto">
                 "This Life Is God’s Gift To Us &amp; <br class="hidden sm:inline">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#df3243] via-[#ff6b6b] to-[#ff8421]">
-                    What We Do With This Life
-                </span> 
+                <span class="text-[#c92a2a]">What We Do With This Life</span> 
                 Is Our Gift To God."
             </h1>
 
             <p class="font-oswald text-xl sm:text-2xl text-gray-300 font-normal uppercase tracking-wider mt-6 max-w-3xl mx-auto">
-                So Let’s Do The Best We Can, With The Best We Have &amp; <span class="text-[#ff8421] font-semibold">Keep Shining.</span>
+                So Let’s Do The Best We Can, With The Best We Have &amp; <span class="text-[#c92a2a] font-semibold">Keep Shining.</span>
             </p>
 
             <div class="mt-8 flex justify-center">
-                <div class="w-24 h-1.5 bg-gradient-to-r from-transparent via-[#df3243] to-transparent rounded-full"></div>
+                <div class="w-16 h-1 bg-[#c92a2a] rounded-full"></div>
             </div>
         </div>
     </section>
@@ -301,11 +294,11 @@
                         <div class="aspect-[4/5] rounded-2xl overflow-hidden relative bg-gradient-to-t from-black via-zinc-900 to-zinc-800 flex items-center justify-center">
                             <!-- High Energy Speaker Silhouette / Illustration -->
                             <div class="w-full h-full flex flex-col items-center justify-center text-center p-8 bg-gradient-to-b from-[#1a0507]/40 via-black to-[#0a0c12]">
-                                <div class="w-32 h-32 rounded-full bg-gradient-to-tr from-[#df3243] to-[#800d18] flex items-center justify-center shadow-2xl shadow-red-900/60 border-4 border-white/20 mb-6 group-hover:scale-105 transition duration-500">
+                                <div class="w-32 h-32 rounded-full bg-[#c92a2a] flex items-center justify-center shadow-xl border-2 border-white/20 mb-6 group-hover:scale-105 transition duration-500">
                                     <span class="font-oswald text-6xl font-bold text-white tracking-tighter">OG</span>
                                 </div>
                                 <h3 class="font-oswald text-3xl font-bold text-white tracking-wide uppercase">OSMAN GANI</h3>
-                                <p class="text-[#df3243] font-montserrat text-xs font-bold uppercase tracking-widest mt-1">Author • Speaker • Life Coach</p>
+                                <p class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest mt-1">Author • Speaker • Life Coach</p>
                                 <div class="mt-6 flex flex-wrap justify-center gap-2">
                                     <span class="px-3 py-1 bg-white/10 rounded-full text-[11px] font-semibold text-gray-300">5 Bestselling Books</span>
                                     <span class="px-3 py-1 bg-white/10 rounded-full text-[11px] font-semibold text-gray-300">2.1M+ Lives Touched</span>
@@ -314,7 +307,7 @@
                         </div>
 
                         <!-- Badge on bottom -->
-                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap bg-gradient-to-r from-[#df3243] to-[#b81b2b] text-white px-6 py-2 rounded-full font-oswald text-sm font-semibold tracking-wider shadow-lg border border-red-400/30">
+                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap bg-gradient-to-r from-[#c92a2a] to-[#b81b2b] text-white px-6 py-2 rounded-full font-oswald text-sm font-semibold tracking-wider shadow-lg border border-red-400/30">
                             ★ LIVING WITH ONE SINGLE MISSION ★
                         </div>
                     </div>
@@ -322,8 +315,8 @@
 
                 <!-- Right: Story Narrative -->
                 <div class="lg:col-span-7 space-y-6">
-                    <div class="border-l-4 border-[#df3243] pl-6 py-1">
-                        <span class="text-[#df3243] font-montserrat text-xs font-bold uppercase tracking-widest block mb-1">
+                    <div class="border-l-4 border-[#c92a2a] pl-6 py-1">
+                        <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-1">
                             An Authentic Journey
                         </span>
                         <h2 class="font-oswald text-3xl sm:text-4xl text-white font-bold uppercase tracking-wide leading-tight">
@@ -363,21 +356,18 @@
     <!-- ======================================================== -->
     <!-- 5. CHRONOLOGICAL LIFE JOURNEY & TIMELINE -->
     <!-- ======================================================== -->
-    <section id="timeline-journey" class="py-20 sm:py-28 bg-[#090b10] border-b border-gray-800 relative">
-        <!-- Ambient Top Right Glow -->
-        <div class="absolute top-1/3 left-0 w-[500px] h-[400px] bg-[#df3243]/10 rounded-full blur-[150px] pointer-events-none"></div>
-
+    <section id="timeline-journey" class="py-20 sm:py-28 bg-[#0c0d12] border-b border-gray-800 relative">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <!-- Section Header -->
             <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24">
-                <span class="text-[#df3243] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
+                <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Chronicles Of Transformation
                 </span>
                 <h2 class="font-oswald text-3xl sm:text-5xl font-bold uppercase tracking-wide text-white">
                     Life Journey &amp; Mission
                 </h2>
-                <div class="w-20 h-1 bg-[#df3243] mx-auto mt-4 mb-4"></div>
+                <div class="w-20 h-1 bg-[#c92a2a] mx-auto mt-4 mb-4"></div>
                 <p class="text-gray-400 font-ubuntu text-sm sm:text-base">
                     Every milestone, challenge, and breakthrough that shaped the philosophies and systems Osman Gani teaches worldwide today.
                 </p>
@@ -540,7 +530,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
-                        <div class="bg-[#df3243] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
+                        <div class="bg-[#c92a2a] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
                             <div>
                                 <span class="text-red-200 text-xs font-montserrat font-bold tracking-widest uppercase block">Chapter 07</span>
                                 <h3 class="font-oswald text-2xl sm:text-3xl font-bold uppercase tracking-wide">GLOBAL EDUCATOR</h3>
@@ -551,7 +541,7 @@
                         </div>
                     </div>
                     <!-- Right Detail Description -->
-                    <div class="md:col-span-8 glass-card rounded-2xl md:rounded-l-none md:rounded-r-3xl p-6 sm:p-8 border-l-4 border-[#df3243]">
+                    <div class="md:col-span-8 glass-card rounded-2xl md:rounded-l-none md:rounded-r-3xl p-6 sm:p-8 border-l-4 border-[#c92a2a]">
                         <p class="text-gray-300 font-ubuntu text-base sm:text-lg leading-relaxed mb-3">
                             What started as a modest calling has transformed into an international education powerhouse, impacting over <span class="text-white font-semibold">2.1 Million lives</span> worldwide.
                         </p>
@@ -565,7 +555,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
-                        <div class="bg-gradient-to-br from-[#df3243] via-[#ff6b6b] to-[#ff8421] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-2xl flex items-center justify-between md:justify-start gap-4 h-full">
+                        <div class="bg-gradient-to-br from-[#c92a2a] via-[#ff6b6b] to-[#ff8421] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-2xl flex items-center justify-between md:justify-start gap-4 h-full">
                             <div>
                                 <span class="text-white text-xs font-montserrat font-bold tracking-widest uppercase block">Ultimate Vision</span>
                                 <h3 class="font-oswald text-2xl sm:text-3xl font-bold uppercase tracking-wide">LIFE MISSION</h3>
@@ -598,13 +588,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-[#df3243] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
+                <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Solutions &amp; Offerings
                 </span>
                 <h2 class="font-oswald text-3xl sm:text-5xl font-bold uppercase tracking-wide text-white">
                     Here’s How Osman Can Help You &amp; Your Team
                 </h2>
-                <div class="w-20 h-1 bg-[#df3243] mx-auto mt-4 mb-4"></div>
+                <div class="w-20 h-1 bg-[#c92a2a] mx-auto mt-4 mb-4"></div>
                 <p class="text-gray-400 font-ubuntu text-sm sm:text-base">
                     Comprehensive avenues engineered to deliver tangible breakthroughs for individuals, sales teams, and corporate organizations.
                 </p>
@@ -616,7 +606,7 @@
                 <!-- Card 1: Books -->
                 <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
-                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#df3243] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#df3243] group-hover:text-white transition duration-300">
+                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-book"></i>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold text-white uppercase tracking-wider">Books</h3>
@@ -632,9 +622,9 @@
                 </div>
 
                 <!-- Card 2: Speaking -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group border-red-500/40 shadow-red-950/40">
+                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group border-white/10">
                     <div class="space-y-4">
-                        <div class="w-16 h-16 rounded-2xl bg-[#df3243] text-white flex items-center justify-center text-2xl mx-auto shadow-lg shadow-red-900/50 transition duration-300">
+                        <div class="w-16 h-16 rounded-2xl bg-[#c92a2a] text-white flex items-center justify-center text-2xl mx-auto shadow-md transition duration-300">
                             <i class="fa-solid fa-microphone-lines"></i>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold text-white uppercase tracking-wider">Speaking</h3>
@@ -652,7 +642,7 @@
                 <!-- Card 3: Courses -->
                 <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
-                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#df3243] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#df3243] group-hover:text-white transition duration-300">
+                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold text-white uppercase tracking-wider">Courses</h3>
@@ -670,7 +660,7 @@
                 <!-- Card 4: Events -->
                 <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
-                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#df3243] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#df3243] group-hover:text-white transition duration-300">
+                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-users-rays"></i>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold text-white uppercase tracking-wider">Events</h3>
@@ -688,7 +678,7 @@
                 <!-- Card 5: Free Resources -->
                 <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
-                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#df3243] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#df3243] group-hover:text-white transition duration-300">
+                        <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-play"></i>
                         </div>
                         <h3 class="font-oswald text-2xl font-bold text-white uppercase tracking-wider">Free Videos</h3>
@@ -712,12 +702,9 @@
     <!-- ======================================================== -->
     <!-- 7. MISSION MANIFESTO CALL TO ACTION -->
     <!-- ======================================================== -->
-    <section class="py-20 sm:py-24 bg-gradient-to-r from-[#120306] via-[#1f060a] to-[#0a0c14] border-b border-gray-800 relative overflow-hidden text-center">
-        <!-- Ambient Radial Glow -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(223,50,67,0.15)_0,transparent_70%)] pointer-events-none"></div>
-
+    <section class="py-20 sm:py-24 bg-[#0c0d12] border-b border-gray-800 relative text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
-            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red-900/40 border border-red-500/30 text-[#df3243] text-xs font-bold font-montserrat uppercase tracking-wider">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold font-montserrat uppercase tracking-wider">
                 <i class="fa-solid fa-heart-pulse"></i>
                 Join The Movement
             </span>
@@ -747,14 +734,14 @@
     <!-- ======================================================== -->
     <!-- 8. FOOTER -->
     <!-- ======================================================== -->
-    <footer class="bg-[#000000] text-gray-400 text-sm border-t-2 border-[#df3243] pt-16 pb-12">
+    <footer class="bg-[#000000] text-gray-400 text-sm border-t-2 border-[#c92a2a] pt-16 pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 
                 <!-- Col 1: Brand & Bio -->
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-[#df3243] flex items-center justify-center text-white font-oswald text-xl font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-[#c92a2a] flex items-center justify-center text-white font-oswald text-xl font-bold">
                             OG
                         </div>
                         <span class="text-white font-oswald text-2xl tracking-wider font-bold">OSMAN GANI</span>
@@ -772,11 +759,11 @@
 
                 <!-- Col 2: About Us -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">About Us</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">About Us</h4>
                     <ul class="space-y-2 text-xs font-ubuntu">
                         <li><a href="{{ route('about.osman-gani') }}" class="hover:text-white transition block py-1">About Osman Gani</a></li>
                         <li><a href="{{ route('about.media-events') }}" class="hover:text-white transition block py-1">Media &amp; Press Events</a></li>
-                        <li><a href="{{ route('about.life-mission') }}" class="text-[#df3243] hover:text-white transition block py-1 font-semibold">Life Mission &amp; Vision</a></li>
+                        <li><a href="{{ route('about.life-mission') }}" class="text-[#c92a2a] hover:text-white transition block py-1 font-semibold">Life Mission &amp; Vision</a></li>
                         <li><a href="{{ route('speaking') }}" class="hover:text-white transition block py-1">Speaking &amp; Keynotes</a></li>
                         <li><a href="{{ route('about.osman-gani') }}#testimonials" class="hover:text-white transition block py-1">Client Testimonials</a></li>
                     </ul>
@@ -784,7 +771,7 @@
 
                 <!-- Col 3: Products & Services -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">Programs &amp; Books</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">Programs &amp; Books</h4>
                     <ul class="space-y-2 text-xs font-ubuntu">
                         <li><a href="{{ route('books') }}" class="hover:text-white transition block py-1">Bestselling Books</a></li>
                         <li><a href="{{ route('courses') }}" class="hover:text-white transition block py-1">All Online Masterclasses</a></li>
@@ -796,12 +783,12 @@
 
                 <!-- Col 4: Newsletter -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">Stay Connected</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">Stay Connected</h4>
                     <p class="text-xs text-gray-400 font-ubuntu">
                         Subscribe for weekly insights, exclusive masterclass invitations, and free tools.
                     </p>
                     <form action="#" method="POST" class="space-y-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Osman Gani insights!');">
-                        <input type="email" placeholder="Your Email Address" required class="w-full bg-[#111319] border border-gray-700 rounded-lg px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        <input type="email" placeholder="Your Email Address" required class="w-full bg-[#111319] border border-gray-700 rounded-lg px-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                         <button type="submit" class="w-full btn-pill-filled-red text-xs justify-center py-2">
                             Subscribe Now
                         </button>

@@ -15,60 +15,60 @@
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Event Title *</label>
                     <input type="text" name="title" value="{{ old('title', $event->title) }}" required
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Subtitle / Tagline</label>
                     <input type="text" name="subtitle" value="{{ old('subtitle', $event->subtitle) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Event Date String *</label>
                     <input type="text" name="date_string" value="{{ old('date_string', $event->date_string) }}" required
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Event Format / Type</label>
                     <input type="text" name="event_type" value="{{ old('event_type', $event->event_type) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Venue / Location</label>
                     <input type="text" name="location" value="{{ old('location', $event->location) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Ticket Pricing</label>
                     <input type="text" name="pricing" value="{{ old('pricing', $event->pricing) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Registration Link URL</label>
                     <input type="url" name="registration_link" value="{{ old('registration_link', $event->registration_link) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Sort Order</label>
                     <input type="number" name="sort_order" value="{{ old('sort_order', $event->sort_order) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Event Highlights &amp; Overview</label>
                     <textarea name="description" rows="4"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">{{ old('description', $event->description) }}</textarea>
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">{{ old('description', $event->description) }}</textarea>
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="inline-flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" name="is_upcoming" value="1" {{ old('is_upcoming', $event->is_upcoming) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#df3243]">
+                        <input type="checkbox" name="is_upcoming" value="1" {{ old('is_upcoming', $event->is_upcoming) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#c92a2a]">
                         <span class="text-xs text-gray-300 font-semibold">Mark as active upcoming event</span>
                     </label>
                 </div>

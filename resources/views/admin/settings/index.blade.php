@@ -11,7 +11,7 @@
 
             @foreach ($settings as $group => $items)
                 <div class="space-y-4 pt-6 first:pt-0 border-t first:border-t-0 border-gray-800">
-                    <h3 class="font-oswald text-lg font-bold uppercase text-[#df3243] flex items-center gap-2">
+                    <h3 class="font-oswald text-lg font-bold uppercase text-[#c92a2a] flex items-center gap-2">
                         <i class="fa-solid fa-gear text-sm"></i>
                         <span>{{ ucfirst($group) }} Configuration</span>
                     </h3>
@@ -25,10 +25,10 @@
 
                                 @if ($setting->type === 'textarea')
                                     <textarea name="settings[{{ $setting->key }}]" rows="3"
-                                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">{{ old('settings.'.$setting->key, $setting->value) }}</textarea>
+                                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">{{ old('settings.'.$setting->key, $setting->value) }}</textarea>
                                 @else
                                     <input type="{{ $setting->type }}" name="settings[{{ $setting->key }}]" value="{{ old('settings.'.$setting->key, $setting->value) }}"
-                                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                                 @endif
                                 <span class="text-[10px] text-gray-500 font-mono mt-1 block">Key: {{ $setting->key }}</span>
                             </div>
@@ -38,7 +38,7 @@
             @endforeach
 
             <div class="pt-6 border-t border-gray-800 flex items-center justify-end gap-3">
-                <button type="submit" class="btn-pill-filled-red text-xs px-8 py-3 font-semibold shadow-lg shadow-red-600/30">
+                <button type="submit" class="btn-pill-filled-red text-xs px-8 py-3 font-semibold shadow-md">
                     <i class="fa-solid fa-floppy-disk mr-1.5"></i> Save Site Settings
                 </button>
             </div>

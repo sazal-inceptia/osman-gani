@@ -6,7 +6,7 @@
 
 @section('top_actions')
     <a href="{{ route('admin.homepage.index') }}" class="btn-pill-white text-xs px-4 py-2 inline-flex items-center gap-1.5">
-        <i class="fa-solid fa-house-laptop text-xs text-[#df3243]"></i>
+        <i class="fa-solid fa-house-laptop text-xs text-[#c92a2a]"></i>
         <span>Home Page &amp; Video</span>
     </a>
     <a href="{{ route('admin.articles.create') }}" class="btn-pill-filled-red text-xs px-4 py-2">
@@ -24,7 +24,7 @@
         <a href="{{ route('admin.books.index') }}" class="glass-card rounded-2xl p-5 block group">
             <div class="flex items-center justify-between">
                 <span class="text-xs font-semibold uppercase text-gray-400">Published Books</span>
-                <div class="w-10 h-10 rounded-xl bg-red-600/10 text-[#df3243] flex items-center justify-center text-lg group-hover:scale-110 transition">
+                <div class="w-10 h-10 rounded-xl bg-red-600/10 text-[#c92a2a] flex items-center justify-center text-lg group-hover:scale-110 transition">
                     <i class="fa-solid fa-book-open"></i>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <div class="text-3xl font-oswald font-bold text-white">{{ $stats['books_count'] }}</div>
                 <div class="text-[11px] text-gray-400 mt-1 flex items-center gap-1">
                     <span>Manage catalog &amp; purchase links</span>
-                    <i class="fa-solid fa-arrow-right text-[9px] text-[#df3243]"></i>
+                    <i class="fa-solid fa-arrow-right text-[9px] text-[#c92a2a]"></i>
                 </div>
             </div>
         </a>
@@ -83,7 +83,7 @@
                 <div class="text-3xl font-oswald font-bold text-white flex items-center gap-2">
                     <span>{{ $stats['messages_count'] }}</span>
                     @if ($stats['unread_messages_count'] > 0)
-                        <span class="text-xs bg-[#df3243] text-white px-2 py-0.5 rounded-full font-normal">
+                        <span class="text-xs bg-[#c92a2a] text-white px-2 py-0.5 rounded-full font-normal">
                             {{ $stats['unread_messages_count'] }} New
                         </span>
                     @endif
@@ -106,10 +106,10 @@
         <div class="lg:col-span-2 glass-card rounded-2xl p-6">
             <div class="flex items-center justify-between pb-4 border-b border-gray-800">
                 <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-envelope text-[#df3243]"></i>
+                    <i class="fa-solid fa-envelope text-[#c92a2a]"></i>
                     <h3 class="font-oswald text-lg font-bold uppercase text-white">Recent Website Inquiries</h3>
                 </div>
-                <a href="{{ route('admin.messages.index') }}" class="text-xs text-[#df3243] hover:underline">View All &rarr;</a>
+                <a href="{{ route('admin.messages.index') }}" class="text-xs text-[#c92a2a] hover:underline">View All &rarr;</a>
             </div>
 
             <div class="mt-4 overflow-x-auto">
@@ -129,7 +129,7 @@
                                     <td class="py-3.5">
                                         <div class="font-semibold text-white flex items-center gap-2">
                                             @if (! $msg->is_read)
-                                                <span class="w-2 h-2 rounded-full bg-[#df3243]"></span>
+                                                <span class="w-2 h-2 rounded-full bg-[#c92a2a]"></span>
                                             @endif
                                             <span>{{ $msg->name }}</span>
                                         </div>
@@ -169,7 +169,7 @@
                 
                 <div class="grid grid-cols-1 gap-2.5">
                     <a href="{{ route('admin.books.create') }}" class="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-red-600/20 border border-white/10 hover:border-red-500/30 transition text-xs font-semibold text-gray-200">
-                        <span class="flex items-center gap-2"><i class="fa-solid fa-plus text-[#df3243]"></i> Add New Book</span>
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-plus text-[#c92a2a]"></i> Add New Book</span>
                         <i class="fa-solid fa-chevron-right text-[10px] text-gray-500"></i>
                     </a>
                     
@@ -194,12 +194,12 @@
             <div class="glass-card rounded-2xl p-6">
                 <div class="flex items-center justify-between pb-3 border-b border-gray-800 mb-3">
                     <h4 class="font-oswald text-base font-bold uppercase text-white">Articles &amp; Blog</h4>
-                    <a href="{{ route('admin.articles.index') }}" class="text-[11px] text-[#df3243] hover:underline">Manage</a>
+                    <a href="{{ route('admin.articles.index') }}" class="text-[11px] text-[#c92a2a] hover:underline">Manage</a>
                 </div>
                 <div class="space-y-3">
                     @foreach ($recentArticles as $art)
                         <div class="text-xs">
-                            <a href="{{ route('admin.articles.edit', $art) }}" class="font-semibold text-gray-200 hover:text-[#df3243] transition line-clamp-1">
+                            <a href="{{ route('admin.articles.edit', $art) }}" class="font-semibold text-gray-200 hover:text-[#c92a2a] transition line-clamp-1">
                                 {{ $art->title }}
                             </a>
                             <span class="text-[10px] text-gray-500 font-mono">{{ $art->category }} • {{ $art->created_at->format('M d, Y') }}</span>

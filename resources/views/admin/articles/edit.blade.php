@@ -15,48 +15,48 @@
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Article Headline / Title *</label>
                     <input type="text" name="title" value="{{ old('title', $article->title) }}" required
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Category *</label>
                     <input type="text" name="category" value="{{ old('category', $article->category) }}" required
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Estimated Read Time</label>
                     <input type="text" name="read_time" value="{{ old('read_time', $article->read_time) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Author Name</label>
                     <input type="text" name="author" value="{{ old('author', $article->author) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div>
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Custom URL Slug</label>
                     <input type="text" name="slug" value="{{ old('slug', $article->slug) }}"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Short Summary / Excerpt</label>
                     <textarea name="excerpt" rows="2"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">{{ old('excerpt', $article->excerpt) }}</textarea>
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">{{ old('excerpt', $article->excerpt) }}</textarea>
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="block text-xs font-semibold text-gray-300 uppercase tracking-wider mb-2">Full Article Body Content</label>
                     <textarea name="content" rows="8"
-                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#df3243]">{{ old('content', $article->content) }}</textarea>
+                        class="w-full bg-[#0d1017] border border-gray-700/80 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#c92a2a]">{{ old('content', $article->content) }}</textarea>
                 </div>
 
                 <div class="sm:col-span-2">
                     <label class="inline-flex items-center gap-2 cursor-pointer">
-                        <input type="checkbox" name="is_featured" value="1" {{ old('is_featured', $article->is_featured) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#df3243]">
+                        <input type="checkbox" name="is_featured" value="1" {{ old('is_featured', $article->is_featured) ? 'checked' : '' }} class="w-4 h-4 rounded bg-[#0d1017] border-gray-700 text-[#c92a2a]">
                         <span class="text-xs text-gray-300 font-semibold">Featured on home &amp; blog feeds</span>
                     </label>
                 </div>

@@ -39,7 +39,7 @@
                             <td class="p-4 text-gray-300">{{ $book->languages }}</td>
                             <td class="p-4">
                                 @if ($book->is_bestseller)
-                                    <span class="bg-red-600/20 text-[#df3243] border border-red-500/30 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">
+                                    <span class="bg-red-600/20 text-[#c92a2a] border border-red-500/30 px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider">
                                         ★ Bestseller
                                     </span>
                                 @else

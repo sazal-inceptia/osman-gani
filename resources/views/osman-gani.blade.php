@@ -29,7 +29,7 @@
             <!-- Left Contact & Social -->
             <div class="flex items-center flex-wrap gap-4 sm:gap-6">
                 <a href="tel:+8801700000000" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full text-xs font-medium transition duration-200 border border-white/10">
-                    <i class="fa-solid fa-phone-volume text-[#df3243]"></i>
+                    <i class="fa-solid fa-phone-volume text-[#c92a2a]"></i>
                     <span>+880 1700-000000</span>
                 </a>
 
@@ -58,7 +58,7 @@
                     <i class="fa-solid fa-gift"></i>
                     <span>Claim Free Masterclass</span>
                 </a>
-                <a href="{{ route('home') }}#courses" class="inline-flex items-center gap-1.5 bg-white text-black hover:bg-[#df3243] hover:text-white px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 shadow-sm">
+                <a href="{{ route('home') }}#courses" class="inline-flex items-center gap-1.5 bg-white text-black hover:bg-[#c92a2a] hover:text-white px-3.5 py-1 rounded-full text-xs font-semibold uppercase tracking-wider transition-all duration-200 shadow-sm">
                     <span>Student Login</span>
                     <i class="fa-solid fa-angle-right text-[10px]"></i>
                 </a>
@@ -69,17 +69,17 @@
     <!-- ======================================================== -->
     <!-- 2. STICKY MAIN HEADER & NAVIGATION -->
     <!-- ======================================================== -->
-    <header class="sticky top-0 z-50 bg-[#000000] border-b-2 border-[#df3243] shadow-xl">
+    <header class="sticky top-0 z-50 bg-[#0c0d12] border-b-2 border-[#c92a2a] shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
                 <!-- Brand Signature Logo -->
                 <a href="{{ route('home') }}" class="flex items-center gap-3 group">
-                    <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#df3243] to-[#800d18] flex items-center justify-center text-white shadow-lg shadow-red-950/60 font-oswald text-2xl font-bold border border-red-400/30 group-hover:scale-105 transition duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-[#c92a2a] flex items-center justify-center text-white font-oswald text-2xl font-bold shadow-md group-hover:bg-[#a51d24] transition duration-200">
                         OG
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-white font-oswald text-2xl tracking-wider font-bold group-hover:text-[#df3243] transition">
+                        <span class="text-white font-oswald text-2xl tracking-wider font-bold group-hover:text-[#c92a2a] transition">
                             OSMAN GANI
                         </span>
                         <span class="text-[10px] uppercase font-semibold text-gray-400 tracking-[0.2em] -mt-1">
@@ -93,62 +93,62 @@
                     
                     <!-- ABOUT Dropdown (Active) -->
                     <div class="relative group">
-                        <button class="text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>ABOUT</span>
-                            <i class="fa-solid fa-chevron-down text-[10px] text-[#df3243] group-hover:rotate-180 transition-transform duration-200"></i>
+                            <i class="fa-solid fa-chevron-down text-[10px] text-[#c92a2a] group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-56 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('about.osman-gani') }}" class="block px-4 py-2.5 text-xs font-semibold text-[#df3243] bg-red-50 hover:bg-red-100 transition">OSMAN GANI</a>
-                            <a href="{{ route('about.media-events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">MEDIA &amp; EVENTS</a>
-                            <a href="{{ route('about.life-mission') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">LIFE MISSION</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-56 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('about.osman-gani') }}" class="block px-4 py-2.5 text-xs font-semibold text-[#c92a2a] bg-red-50 hover:bg-red-100 transition">OSMAN GANI</a>
+                            <a href="{{ route('about.media-events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">MEDIA &amp; EVENTS</a>
+                            <a href="{{ route('about.life-mission') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">LIFE MISSION</a>
                         </div>
                     </div>
 
-                    <a href="{{ route('books') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">BOOKS</a>
-                    <a href="{{ route('speaking') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">SPEAKING</a>
+                    <a href="{{ route('books') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">BOOKS</a>
+                    <a href="{{ route('speaking') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">SPEAKING</a>
 
                     <!-- COURSES Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>COURSES</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('courses') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ALL MASTER COURSES</a>
-                            <a href="{{ route('courses') }}#course-ai" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">AI MASTERY PROGRAM</a>
-                            <a href="{{ route('courses') }}#course-sm" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">SOCIAL MEDIA &amp; BUSINESS</a>
-                            <a href="{{ route('courses') }}#course-time" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">TIME &amp; PRODUCTIVITY MASTERY</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('courses') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ALL MASTER COURSES</a>
+                            <a href="{{ route('courses') }}#course-ai" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">AI MASTERY PROGRAM</a>
+                            <a href="{{ route('courses') }}#course-sm" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">SOCIAL MEDIA &amp; BUSINESS</a>
+                            <a href="{{ route('courses') }}#course-time" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">TIME &amp; PRODUCTIVITY MASTERY</a>
                         </div>
                     </div>
 
                     <!-- EVENTS Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>EVENTS</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ALL UPCOMING EVENTS</a>
-                            <a href="{{ route('events') }}#trainer-bootcamp" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">TRAIN THE TRAINER BOOTCAMP</a>
-                            <a href="{{ route('events') }}#unleash-champion" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">UNLEASH THE CHAMPION IN YOU</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-72 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('events') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ALL UPCOMING EVENTS</a>
+                            <a href="{{ route('events') }}#trainer-bootcamp" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">TRAIN THE TRAINER BOOTCAMP</a>
+                            <a href="{{ route('events') }}#unleash-champion" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">UNLEASH THE CHAMPION IN YOU</a>
                         </div>
                     </div>
 
                     <!-- RESOURCES Dropdown -->
                     <div class="relative group">
-                        <button class="text-white hover:text-[#df3243] py-7 px-3 inline-flex items-center gap-1 transition">
+                        <button class="text-white hover:text-[#c92a2a] py-7 px-3 inline-flex items-center gap-1 transition">
                             <span>RESOURCES</span>
                             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 group-hover:rotate-180 transition-transform duration-200"></i>
                         </button>
-                        <div class="dropdown-menu-custom absolute left-0 top-full w-60 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#df3243] py-2 z-50">
-                            <a href="{{ route('resources.free-videos') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">FREE VIDEO LIBRARY</a>
-                            <a href="{{ route('resources.ebooks') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">FREE E-BOOKS &amp; GUIDES</a>
-                            <a href="{{ route('resources.tools') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">PRODUCTIVITY TOOLS</a>
-                            <a href="{{ route('resources.blog') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#df3243] transition">ARTICLES &amp; BLOG</a>
+                        <div class="dropdown-menu-custom absolute left-0 top-full w-60 bg-white rounded-b-xl shadow-2xl border-t-2 border-[#c92a2a] py-2 z-50">
+                            <a href="{{ route('resources.free-videos') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">FREE VIDEO LIBRARY</a>
+                            <a href="{{ route('resources.ebooks') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">FREE E-BOOKS &amp; GUIDES</a>
+                            <a href="{{ route('resources.tools') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">PRODUCTIVITY TOOLS</a>
+                            <a href="{{ route('resources.blog') }}" class="block px-4 py-2.5 text-xs font-semibold text-gray-800 hover:bg-red-50 hover:text-[#c92a2a] transition">ARTICLES &amp; BLOG</a>
                         </div>
                     </div>
 
-                    <a href="{{ route('contact') }}" class="text-white hover:text-[#df3243] py-7 px-3 transition">CONTACT</a>
+                    <a href="{{ route('contact') }}" class="text-white hover:text-[#c92a2a] py-7 px-3 transition">CONTACT</a>
                 </nav>
 
                 <!-- Action Button & Mobile Toggle -->
@@ -159,7 +159,7 @@
                     </a>
 
                     <!-- Mobile Hamburger Button -->
-                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-white hover:text-[#df3243] hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation">
+                    <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 rounded-lg text-white hover:text-[#c92a2a] hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -169,15 +169,15 @@
         <!-- Mobile Drawer Menu -->
         <div id="mobile-menu" class="hidden lg:hidden bg-[#090b10] border-t border-gray-800 px-5 py-6 space-y-4">
             <div class="flex flex-col space-y-3 font-montserrat text-sm font-semibold text-gray-200">
-                <a href="{{ route('about.osman-gani') }}" class="text-[#df3243] py-1 border-b border-gray-800/60">ABOUT OSMAN GANI</a>
-                <a href="{{ route('about.media-events') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">MEDIA &amp; EVENTS</a>
-                <a href="{{ route('about.life-mission') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">LIFE MISSION</a>
-                <a href="{{ route('books') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">BOOKS</a>
-                <a href="{{ route('speaking') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">SPEAKING</a>
-                <a href="{{ route('courses') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">COURSES</a>
-                <a href="{{ route('events') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">EVENTS</a>
-                <a href="{{ route('resources.free-videos') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">FREE RESOURCES</a>
-                <a href="{{ route('contact') }}" class="hover:text-[#df3243] py-1 border-b border-gray-800/60">CONTACT</a>
+                <a href="{{ route('about.osman-gani') }}" class="text-[#c92a2a] py-1 border-b border-gray-800/60">ABOUT OSMAN GANI</a>
+                <a href="{{ route('about.media-events') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">MEDIA &amp; EVENTS</a>
+                <a href="{{ route('about.life-mission') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">LIFE MISSION</a>
+                <a href="{{ route('books') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">BOOKS</a>
+                <a href="{{ route('speaking') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">SPEAKING</a>
+                <a href="{{ route('courses') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">COURSES</a>
+                <a href="{{ route('events') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">EVENTS</a>
+                <a href="{{ route('resources.free-videos') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">FREE RESOURCES</a>
+                <a href="{{ route('contact') }}" class="hover:text-[#c92a2a] py-1 border-b border-gray-800/60">CONTACT</a>
             </div>
             <div class="pt-4 flex flex-col gap-3">
                 <a href="{{ route('speaking') }}" class="btn-pill-filled-red text-center justify-center w-full">Book Keynote Session</a>
@@ -190,12 +190,9 @@
 
 
     <!-- ======================================================== -->
-    <!-- 3. PAGE HERO BANNER WITH CURVED BOTTOM (deepakbajaj.biz style) -->
+    <!-- 3. PAGE HERO BANNER -->
     <!-- ======================================================== -->
-    <section class="relative bg-gradient-to-br from-[#06070a] via-[#10141f] to-[#06070a] text-white pt-16 pb-24 overflow-hidden border-b border-gray-800">
-        <!-- Ambient Glow -->
-        <div class="absolute -top-10 left-1/3 w-[500px] h-[300px] bg-[#df3243]/20 rounded-full blur-[130px] pointer-events-none"></div>
-
+    <section class="relative bg-[#0c0d12] text-white pt-16 pb-24 overflow-hidden border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <!-- Breadcrumbs -->
             <div class="flex items-center gap-2 text-xs font-semibold text-gray-400 uppercase tracking-wider mb-6">
@@ -203,17 +200,17 @@
                 <i class="fa-solid fa-chevron-right text-[9px] text-gray-600"></i>
                 <span class="text-gray-400">About</span>
                 <i class="fa-solid fa-chevron-right text-[9px] text-gray-600"></i>
-                <span class="text-[#df3243]">Osman Gani</span>
+                <span class="text-[#c92a2a]">Osman Gani</span>
             </div>
 
             <div class="max-w-3xl space-y-4">
-                <span class="inline-block px-3.5 py-1 rounded-full bg-red-600/20 text-red-400 border border-red-500/30 text-xs font-bold uppercase tracking-wider">
+                <span class="inline-block px-3.5 py-1 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold uppercase tracking-wider">
                     Author • Speaker • Transformation Coach
                 </span>
-                <h1 class="font-oswald text-4xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight text-white leading-tight">
-                    About <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#df3243] via-[#ff6b81] to-[#ff8421]">Osman Gani</span>
+                <h1 class="font-oswald text-4xl sm:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-white leading-tight">
+                    About <span class="text-[#c92a2a]">Osman Gani</span>
                 </h1>
-                <p class="font-ubuntu text-base sm:text-lg text-gray-300 font-light leading-relaxed">
+                <p class="font-ubuntu text-base sm:text-lg text-gray-300 font-normal leading-relaxed">
                     A transformative journey of relentless resilience, human potential, leadership mastery, and touching over 500,000+ lives globally.
                 </p>
             </div>
@@ -245,10 +242,10 @@
                         </h2>
                         
                         <!-- Red Left Border Tagline matching deepakbajaj.biz -->
-                        <div class="border-l-4 border-[#df3243] pl-5 py-1">
+                        <div class="border-l-4 border-[#c92a2a] pl-5 py-1">
                             <h3 class="font-oswald text-xl sm:text-2xl font-bold text-gray-900 leading-snug">
                                 Life &amp; Business Transformation Coach<br>
-                                <span class="text-[#df3243]">Bestselling Author – 5+ Books in 9 Languages</span><br>
+                                <span class="text-[#c92a2a]">Bestselling Author – 5+ Books in 9 Languages</span><br>
                                 Motivational Speaker &amp; Corporate Trainer
                             </h3>
                         </div>
@@ -264,10 +261,10 @@
 
                 <!-- Right Profile Highlight Badge Card -->
                 <div class="lg:col-span-5">
-                    <div class="relative max-w-md mx-auto bg-gradient-to-b from-gray-900 to-black text-white p-8 rounded-3xl border-2 border-red-500/20 shadow-2xl text-center space-y-5">
+                    <div class="relative max-w-md mx-auto bg-[#0c0d12] text-white p-8 rounded-3xl border border-gray-800 shadow-xl text-center space-y-5">
                         
-                        <div class="w-36 h-36 mx-auto rounded-full bg-gradient-to-tr from-[#df3243] to-[#ff8421] p-1.5 shadow-2xl shadow-red-950/80">
-                            <div class="w-full h-full rounded-full bg-[#121520] flex items-center justify-center text-white font-oswald text-5xl font-black">
+                        <div class="w-36 h-36 mx-auto rounded-full border-2 border-[#c92a2a] p-1.5 shadow-lg bg-[#141722]">
+                            <div class="w-full h-full rounded-full bg-[#181b28] flex items-center justify-center text-white font-oswald text-5xl font-black">
                                 OG
                             </div>
                         </div>
@@ -279,11 +276,11 @@
 
                         <div class="pt-2 pb-1 border-t border-white/10 space-y-2 text-xs text-gray-300">
                             <div class="flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-phone text-[#df3243]"></i>
+                                <i class="fa-solid fa-phone text-[#c92a2a]"></i>
                                 <span class="font-semibold text-white">Direct Hotline: +880 1700-000000</span>
                             </div>
                             <div class="flex items-center justify-center gap-2">
-                                <i class="fa-solid fa-envelope text-[#df3243]"></i>
+                                <i class="fa-solid fa-envelope text-[#c92a2a]"></i>
                                 <span>support@osmangani.biz</span>
                             </div>
                         </div>
@@ -381,11 +378,11 @@
                 <!-- Left Column: Stylized Badge Graphic -->
                 <div class="lg:col-span-5 text-center lg:text-left">
                     <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-xl space-y-6">
-                        <div class="w-24 h-24 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-tr from-[#df3243] to-[#ff8421] text-white flex items-center justify-center text-4xl shadow-lg">
+                        <div class="w-24 h-24 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-tr from-[#c92a2a] to-[#ff8421] text-white flex items-center justify-center text-4xl shadow-lg">
                             <i class="fa-solid fa-award"></i>
                         </div>
                         <div class="space-y-2">
-                            <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">Unrivaled Credentials</span>
+                            <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Unrivaled Credentials</span>
                             <h3 class="font-oswald text-3xl sm:text-4xl font-black text-gray-900 leading-tight">
                                 Delivering Guaranteed Transformation
                             </h3>
@@ -395,7 +392,7 @@
                         </div>
                         <div class="pt-4 border-t border-gray-100 flex items-center justify-between text-xs text-gray-500 font-semibold">
                             <span>15+ Years Track Record</span>
-                            <span class="text-[#df3243] font-bold">500,000+ Alumni</span>
+                            <span class="text-[#c92a2a] font-bold">500,000+ Alumni</span>
                         </div>
                     </div>
                 </div>
@@ -408,50 +405,50 @@
 
                     <div class="space-y-4 font-ubuntu text-sm sm:text-base text-gray-700">
                         
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">15+ Years of Proven Training Experience</strong> in Sales Multiplication, Executive Leadership, Success Psychology, and Time Mastery.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">Trained Over 500,000+ People</strong> across 50+ countries through stadium conventions, bootcamps, and virtual summits.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">1+ Billion Views</strong> on digital media and social channels, creating a loyal global community of high achievers.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">Best Leadership &amp; Business Coach of the Year</strong> award recipient at premier corporate forums.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">Keynote Speaker &amp; Guest Lecturer</strong> at top universities, management institutes, and corporate summits.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">#1 Bestselling Author of 5+ Books</strong> translated into 9 languages with over 500,000+ print copies sold.
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#df3243] transition">
-                            <i class="fa-solid fa-angles-right text-[#df3243] text-lg mt-0.5"></i>
+                        <div class="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-200 shadow-sm hover:border-[#c92a2a] transition">
+                            <i class="fa-solid fa-angles-right text-[#c92a2a] text-lg mt-0.5"></i>
                             <div>
                                 <strong class="text-gray-950 font-bold">Trusted Strategic Advisor</strong> to emerging startups, direct sales enterprises, and Fortune 500 leadership circles.
                             </div>
@@ -473,11 +470,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">Moments of Global Impact</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Moments of Global Impact</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-gray-950">
                     Empowering Audiences Worldwide
                 </h2>
-                <div class="w-20 h-1 bg-[#df3243] mx-auto rounded-full mt-4"></div>
+                <div class="w-20 h-1 bg-[#c92a2a] mx-auto rounded-full mt-4"></div>
             </div>
 
             <!-- 4 Column Impact Highlights -->
@@ -544,11 +541,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">Core Solutions</span>
+                <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Core Solutions</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 uppercase">
                     Here's How Osman Can Help You &amp; Your Team
                 </h2>
-                <div class="w-20 h-1 bg-[#df3243] mx-auto rounded-full mt-4"></div>
+                <div class="w-20 h-1 bg-[#c92a2a] mx-auto rounded-full mt-4"></div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -559,7 +556,7 @@
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-red-600 to-amber-700 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-book-open"></i>
                         </div>
-                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#df3243] transition">Books</h3>
+                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#c92a2a] transition">Books</h3>
                         <p class="font-ubuntu text-xs text-gray-600 leading-relaxed">
                             #1 Bestselling books in 9 languages for Total Life, Sales &amp; Business Breakthrough.
                         </p>
@@ -578,7 +575,7 @@
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-gray-900 to-red-900 rounded-lg shadow-md flex items-center justify-center text-amber-400 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-microphone-lines"></i>
                         </div>
-                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#df3243] transition">Speaking</h3>
+                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#c92a2a] transition">Speaking</h3>
                         <p class="font-ubuntu text-xs text-gray-600 leading-relaxed">
                             Invite Osman at your next conference or event to empower your team for 10x Results.
                         </p>
@@ -597,7 +594,7 @@
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-indigo-900 to-purple-900 rounded-lg shadow-md flex items-center justify-center text-cyan-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#df3243] transition">Courses</h3>
+                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#c92a2a] transition">Courses</h3>
                         <p class="font-ubuntu text-xs text-gray-600 leading-relaxed">
                             Learn anytime, anywhere on your mobile from practical, result-oriented masterclasses.
                         </p>
@@ -616,7 +613,7 @@
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-emerald-900 to-teal-900 rounded-lg shadow-md flex items-center justify-center text-emerald-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-people-group"></i>
                         </div>
-                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#df3243] transition">Events</h3>
+                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#c92a2a] transition">Events</h3>
                         <p class="font-ubuntu text-xs text-gray-600 leading-relaxed">
                             Attend high-energy live bootcamps and workshops for instant breakthrough and lasting change.
                         </p>
@@ -635,7 +632,7 @@
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-red-800 to-rose-950 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-circle-play"></i>
                         </div>
-                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#df3243] transition">Free Videos</h3>
+                        <h3 class="font-oswald text-2xl font-bold text-gray-900 group-hover:text-[#c92a2a] transition">Free Videos</h3>
                         <p class="font-ubuntu text-xs text-gray-600 leading-relaxed">
                             1000+ Free video lessons for instant tips, actionable tactics &amp; life growth strategies.
                         </p>
@@ -656,23 +653,23 @@
     <!-- ======================================================== -->
     <!-- 8. CALL TO ACTION / BOOK OSMAN GANI -->
     <!-- ======================================================== -->
-    <section class="py-20 bg-gradient-to-r from-red-700 via-rose-800 to-red-950 text-white text-center">
+    <section class="py-20 bg-[#0c0d12] border-t border-gray-800 text-white text-center">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-amber-300 text-xs font-bold uppercase tracking-wider border border-white/20">
+            <span class="inline-block px-3.5 py-1.5 rounded-full bg-white/5 text-[#c92a2a] text-xs font-bold uppercase tracking-wider border border-white/10">
                 Book A High-Impact Keynote
             </span>
-            <h2 class="font-oswald text-3xl sm:text-4xl md:text-5xl font-extrabold uppercase tracking-tight">
+            <h2 class="font-oswald text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight text-white">
                 Ready to Elevate Your Organization to Peak Performance?
             </h2>
-            <p class="font-ubuntu text-base sm:text-lg text-gray-200 max-w-2xl mx-auto font-light leading-relaxed">
+            <p class="font-ubuntu text-base sm:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
                 Connect directly with Osman Gani's team to check keynote availability for your upcoming annual convention, conference, or corporate retreat.
             </p>
             <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
-                <a href="tel:+8801700000000" class="btn-pill-filled-red text-lg px-8 py-3.5 bg-amber-400 hover:bg-amber-300 text-gray-950 border-amber-400 shadow-2xl">
+                <a href="tel:+8801700000000" class="btn-pill-filled-red text-base px-8 py-3.5">
                     <i class="fa-solid fa-phone"></i> Call +880 1700-000000
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=8801700000000" target="_blank" class="inline-flex items-center gap-2 font-oswald font-medium text-lg px-8 py-3.5 rounded-full border-2 border-white/40 hover:border-white text-white hover:bg-white/10 transition">
-                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp Us
+                <a href="https://api.whatsapp.com/send?phone=8801700000000" target="_blank" class="btn-pill-white text-base px-8 py-3.5">
+                    <i class="fa-brands fa-whatsapp text-emerald-500"></i> WhatsApp Us
                 </a>
             </div>
         </div>
@@ -689,7 +686,7 @@
                 <!-- Col 1: Contact Us & Brand -->
                 <div class="space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-[#df3243] flex items-center justify-center text-white font-oswald text-xl font-bold">
+                        <div class="w-10 h-10 rounded-xl bg-[#c92a2a] flex items-center justify-center text-white font-oswald text-xl font-bold">
                             OG
                         </div>
                         <span class="font-oswald text-2xl font-bold text-white tracking-wider">OSMAN GANI</span>
@@ -698,7 +695,7 @@
                         Transforming lives, elevating mindset, and creating high-performance leaders across the globe.
                     </p>
 
-                    <h4 class="font-oswald text-lg text-[#df3243] font-bold pt-2 uppercase">Contact Us</h4>
+                    <h4 class="font-oswald text-lg text-[#c92a2a] font-bold pt-2 uppercase">Contact Us</h4>
                     <ul class="space-y-2.5 text-xs text-gray-300 font-ubuntu">
                         <li class="flex items-center gap-2.5">
                             <i class="fa-solid fa-envelope text-red-500 w-4"></i>
@@ -725,9 +722,9 @@
 
                 <!-- Col 2: About Us -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">About Us</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">About Us</h4>
                     <ul class="space-y-2 text-xs font-ubuntu">
-                        <li><a href="{{ route('about.osman-gani') }}" class="text-[#df3243] font-semibold block py-1">About Osman Gani</a></li>
+                        <li><a href="{{ route('about.osman-gani') }}" class="text-[#c92a2a] font-semibold block py-1">About Osman Gani</a></li>
                         <li><a href="{{ route('about.media-events') }}" class="hover:text-white transition block py-1">Media &amp; Press Events</a></li>
                         <li><a href="{{ route('about.life-mission') }}" class="hover:text-white transition block py-1">Life Mission &amp; Vision</a></li>
                         <li><a href="{{ route('speaking') }}" class="hover:text-white transition block py-1">Speaking &amp; Keynotes</a></li>
@@ -737,7 +734,7 @@
 
                 <!-- Col 3: Products & Services -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">Programs &amp; Books</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">Programs &amp; Books</h4>
                     <ul class="space-y-2 text-xs font-ubuntu">
                         <li><a href="{{ route('books') }}" class="hover:text-white transition block py-1">Bestselling Books</a></li>
                         <li><a href="{{ route('courses') }}" class="hover:text-white transition block py-1">All Online Masterclasses</a></li>
@@ -750,7 +747,7 @@
 
                 <!-- Col 4: Quick Links & Legal -->
                 <div class="space-y-4">
-                    <h4 class="font-oswald text-xl text-[#df3243] font-bold uppercase">Resources &amp; Support</h4>
+                    <h4 class="font-oswald text-xl text-[#c92a2a] font-bold uppercase">Resources &amp; Support</h4>
                     <ul class="space-y-2 text-xs font-ubuntu">
                         <li><a href="{{ route('resources.free-videos') }}" class="hover:text-white transition block py-1">Free Video Library</a></li>
                         <li><a href="{{ route('resources.ebooks') }}" class="hover:text-white transition block py-1">Free E-Books &amp; Guides</a></li>
