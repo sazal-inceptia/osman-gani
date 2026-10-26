@@ -233,3 +233,24 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ======================================================== */
+/* GSAP Scroll Progress Bar & Animation Styles */
+/* ======================================================== */
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #df3243 0%, #ff8421 100%);
+    box-shadow: 0 0 10px rgba(223, 50, 67, 0.7);
+    z-index: 99999;
+    pointer-events: none;
+    transition: width 0.08s linear;
+}
+
+.gsap-reveal-init {
+    will-change: transform, opacity;
+}
+

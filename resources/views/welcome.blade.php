@@ -192,7 +192,7 @@
     <!-- ======================================================== -->
     <!-- 3. HERO SECTION / DYNAMIC VIDEO BANNER -->
     <!-- ======================================================== -->
-    <section class="relative bg-gradient-to-b from-[#050608] via-[#0d1017] to-[#050608] text-white overflow-hidden py-16 sm:py-24 border-b border-gray-800">
+    <section class="hero-section relative bg-gradient-to-b from-[#050608] via-[#0d1017] to-[#050608] text-white overflow-hidden py-16 sm:py-24 border-b border-gray-800">
         <!-- Ambient Glow Elements -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#df3243]/15 rounded-full blur-[120px] pointer-events-none"></div>
         <div class="absolute -bottom-10 right-10 w-[400px] h-[300px] bg-[#ff8421]/10 rounded-full blur-[100px] pointer-events-none"></div>
@@ -201,7 +201,7 @@
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
                 <!-- Hero Left Content -->
-                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                <div class="hero-left-content lg:col-span-7 text-center lg:text-left space-y-6">
                     
                     <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-xs sm:text-sm font-semibold uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-[#df3243] animate-pulse"></span>
@@ -251,7 +251,7 @@
                 </div>
 
                 <!-- Hero Right Media Card / Video Frame -->
-                <div class="lg:col-span-5">
+                <div class="hero-right-media lg:col-span-5">
                     <div class="relative group mx-auto max-w-md lg:max-w-none">
                         
                         <!-- Glowing backdrop frame -->
@@ -325,8 +325,8 @@
     <!-- ======================================================== -->
     <!-- 4. CORE MOTTO HEADLINE BANNER (Iconic deepakbajaj.biz style) -->
     <!-- ======================================================== -->
-    <section class="bg-black text-white py-6 border-b border-[#df3243]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="motto-section bg-black text-white py-6 border-b border-[#df3243]">
+        <div class="section-header max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="font-oswald font-semibold text-lg sm:text-2xl md:text-3xl tracking-wide uppercase text-white/95">
                 @php
                     $motto = $siteSettings['hero_motto_text'] ?? 'Results | Happiness | Success | Career Growth | Business Multiplication | Leadership';
@@ -345,7 +345,7 @@
     <!-- ======================================================== -->
     <!-- 5. KEY STATS & PROVEN TRACK RECORD BAR (5 Column Layout) -->
     <!-- ======================================================== -->
-    <section class="py-14 bg-gray-50 border-b border-gray-200">
+    <section class="stats-section py-14 bg-gray-50 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center">
                 
@@ -354,7 +354,9 @@
                     <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-red-100 flex items-center justify-center text-[#df3243] text-2xl group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
-                    <div class="font-oswald text-4xl font-extrabold text-gray-900">15+</div>
+                    <div class="font-oswald text-4xl font-extrabold text-gray-900">
+                        <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+                    </div>
                     <div class="brand-divider"></div>
                     <div class="font-ubuntu text-base font-medium text-gray-700">Years Of Experience</div>
                 </div>
@@ -364,7 +366,9 @@
                     <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-amber-100 flex items-center justify-center text-[#ff8421] text-2xl group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-                    <div class="font-oswald text-4xl font-extrabold text-gray-900">500,000+</div>
+                    <div class="font-oswald text-4xl font-extrabold text-gray-900">
+                        <span class="stat-number" data-target="500000" data-suffix="+" data-comma="true">500,000+</span>
+                    </div>
                     <div class="brand-divider"></div>
                     <div class="font-ubuntu text-base font-medium text-gray-700">Students &amp; Attendees</div>
                 </div>
@@ -374,7 +378,9 @@
                     <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-red-100 flex items-center justify-center text-[#df3243] text-2xl group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-video"></i>
                     </div>
-                    <div class="font-oswald text-4xl font-extrabold text-gray-900">1B+</div>
+                    <div class="font-oswald text-4xl font-extrabold text-gray-900">
+                        <span class="stat-number" data-target="1" data-suffix="B+" data-b="true">1B+</span>
+                    </div>
                     <div class="brand-divider"></div>
                     <div class="font-ubuntu text-base font-medium text-gray-700">Social Media Views</div>
                 </div>
@@ -384,7 +390,9 @@
                     <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600 text-2xl group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-globe"></i>
                     </div>
-                    <div class="font-oswald text-4xl font-extrabold text-gray-900">50+</div>
+                    <div class="font-oswald text-4xl font-extrabold text-gray-900">
+                        <span class="stat-number" data-target="50" data-suffix="+">50+</span>
+                    </div>
                     <div class="brand-divider"></div>
                     <div class="font-ubuntu text-base font-medium text-gray-700">Countries Impacted</div>
                 </div>
@@ -394,7 +402,9 @@
                     <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600 text-2xl group-hover:scale-110 transition duration-300">
                         <i class="fa-solid fa-language"></i>
                     </div>
-                    <div class="font-oswald text-4xl font-extrabold text-gray-900">9+</div>
+                    <div class="font-oswald text-4xl font-extrabold text-gray-900">
+                        <span class="stat-number" data-target="9" data-suffix="+">9+</span>
+                    </div>
                     <div class="brand-divider"></div>
                     <div class="font-ubuntu text-base font-medium text-gray-700">Languages Available</div>
                 </div>
@@ -406,10 +416,10 @@
     <!-- ======================================================== -->
     <!-- 6. HERE'S HOW OSMAN CAN HELP YOU & YOUR TEAM (5 Pillars) -->
     <!-- ======================================================== -->
-    <section class="py-20 bg-white">
+    <section id="pillars-section" class="pillars-section py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">Customized Transformation Solutions</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 uppercase">
                     Here's How Osman Can Help You &amp; Your Team
@@ -417,10 +427,10 @@
                 <div class="w-20 h-1 bg-[#df3243] mx-auto rounded-full mt-4"></div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="pillars-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                 
                 <!-- Pillar 1: Books -->
-                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="pillar-card bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-24 h-32 mx-auto bg-gradient-to-br from-red-600 to-amber-700 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-book-open"></i>
@@ -439,7 +449,7 @@
                 </div>
 
                 <!-- Pillar 2: Speaking -->
-                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="pillar-card bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-24 h-32 mx-auto bg-gradient-to-br from-gray-900 to-red-900 rounded-lg shadow-md flex items-center justify-center text-amber-400 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-microphone-lines"></i>
@@ -458,7 +468,7 @@
                 </div>
 
                 <!-- Pillar 3: Courses -->
-                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="pillar-card bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-24 h-32 mx-auto bg-gradient-to-br from-indigo-900 to-purple-900 rounded-lg shadow-md flex items-center justify-center text-cyan-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-laptop-code"></i>
@@ -477,7 +487,7 @@
                 </div>
 
                 <!-- Pillar 4: Events -->
-                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="pillar-card bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-24 h-32 mx-auto bg-gradient-to-br from-emerald-900 to-teal-900 rounded-lg shadow-md flex items-center justify-center text-emerald-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-people-group"></i>
@@ -496,7 +506,7 @@
                 </div>
 
                 <!-- Pillar 5: Free Videos -->
-                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="pillar-card bg-white border border-gray-100 rounded-2xl p-6 shadow-lg shadow-gray-100/70 hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-24 h-32 mx-auto bg-gradient-to-br from-red-800 to-rose-950 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-circle-play"></i>
@@ -521,8 +531,8 @@
     <!-- ======================================================== -->
     <!-- 7. FEATURED IN / MEDIA & PRESS MARQUEE -->
     <!-- ======================================================== -->
-    <section class="py-12 bg-gray-900 text-white overflow-hidden border-y border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
+    <section class="media-press-section py-12 bg-gray-900 text-white overflow-hidden border-y border-gray-800">
+        <div class="section-header max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 text-center">
             <h3 class="font-oswald text-xl sm:text-2xl font-bold uppercase tracking-wider text-gray-400">
                 Featured In Leading Media &amp; Publications
             </h3>
@@ -554,10 +564,10 @@
     <!-- ======================================================== -->
     <!-- 8. BESTSELLING BOOKS SHOWCASE SECTION -->
     <!-- ======================================================== -->
-    <section id="books" class="py-20 bg-gradient-to-b from-white to-gray-50 border-b border-gray-200">
+    <section id="books" class="books-section py-20 bg-gradient-to-b from-white to-gray-50 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-4xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-4xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">National &amp; Global Bestsellers</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 uppercase">
                     Upgrade Your Skills &amp; Multiply Your Income With Osman's Bestselling Books
@@ -569,7 +579,7 @@
             </div>
 
             <!-- Books Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="books-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 
                 <!-- Book 1 -->
                 <div class="book-card-3d bg-white rounded-2xl p-6 border border-gray-200 shadow-xl flex flex-col justify-between text-center group">
@@ -703,12 +713,12 @@
     <!-- ======================================================== -->
     <!-- 9. PRAISE & TESTIMONIALS (Dark Luxury Section like reference) -->
     <!-- ======================================================== -->
-    <section class="py-24 bg-[#090b10] text-white border-b border-gray-800 relative overflow-hidden">
+    <section id="testimonials-section" class="testimonials-section py-24 bg-[#090b10] text-white border-b border-gray-800 relative overflow-hidden">
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-[#df3243]/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#ff8421]">Industry Endorsements</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-white tracking-wide">
                     Praise For Osman Gani's Work
@@ -720,7 +730,7 @@
             </div>
 
             <!-- Top Row: Prominent Quotes -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="testimonials-grid grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 
                 <!-- Testimonial 1 -->
                 <div class="testimonial-card-dark p-8 flex flex-col justify-between">
@@ -797,7 +807,7 @@
             </div>
 
             <!-- Bottom Row: Video Testimonials with Play Buttons -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="testimonials-video-grid grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Video Testimonial 1 -->
                 <div class="testimonial-card-dark p-6 space-y-4">
@@ -852,10 +862,10 @@
     <!-- ======================================================== -->
     <!-- 10. LATEST COURSES & UPCOMING EVENTS -->
     <!-- ======================================================== -->
-    <section id="courses" class="py-24 bg-white border-b border-gray-200">
+    <section id="courses" class="courses-section py-24 bg-white border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#df3243]">World-Class Online Learning</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-gray-950">
                     Latest Courses &amp; Upcoming Masterclasses
@@ -867,10 +877,10 @@
             </div>
 
             <!-- Course Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="courses-grid grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Course 1: Time Mastery -->
-                <div id="course-time" class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between">
+                <div id="course-time" class="course-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="relative bg-gradient-to-r from-emerald-700 to-teal-900 p-8 text-white aspect-[16/10] flex flex-col justify-between">
                             <span class="inline-block bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider w-fit">
@@ -916,7 +926,7 @@
                 </div>
 
                 <!-- Course 2: AI Mastery (Highlighted) -->
-                <div id="course-ai" class="bg-white rounded-2xl border-2 border-[#df3243] overflow-hidden shadow-2xl hover:shadow-red-500/20 hover:-translate-y-2 transition duration-300 flex flex-col justify-between relative">
+                <div id="course-ai" class="course-card bg-white rounded-2xl border-2 border-[#df3243] overflow-hidden shadow-2xl hover:shadow-red-500/20 hover:-translate-y-2 transition duration-300 flex flex-col justify-between relative">
                     
                     <div class="absolute top-3 right-3 z-10 bg-[#df3243] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
                         ★ Most Popular
@@ -967,7 +977,7 @@
                 </div>
 
                 <!-- Course 3: Social Media & Online Business -->
-                <div id="course-sm" class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between">
+                <div id="course-sm" class="course-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between">
                     <div>
                         <div class="relative bg-gradient-to-r from-blue-800 to-indigo-950 p-8 text-white aspect-[16/10] flex flex-col justify-between">
                             <span class="inline-block bg-white/20 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider w-fit">
@@ -1020,8 +1030,8 @@
     <!-- ======================================================== -->
     <!-- 11. LEAD MAGNET / FREE MASTERCLASS NEWSLETTER OPTIN -->
     <!-- ======================================================== -->
-    <section id="newsletter" class="py-20 bg-gradient-to-r from-red-700 via-rose-800 to-red-950 text-white relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+    <section id="newsletter" class="newsletter-section py-20 bg-gradient-to-r from-red-700 via-rose-800 to-red-950 text-white relative overflow-hidden">
+        <div class="newsletter-content max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
             
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md text-amber-300 text-xs font-bold uppercase tracking-wider border border-white/20">
                 <i class="fa-solid fa-gift text-sm"></i>
