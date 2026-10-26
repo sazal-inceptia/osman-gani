@@ -53,7 +53,7 @@
     <section id="speaking-formats" class="py-20 sm:py-28 bg-[#fbfaf8] border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Engagement Models
                 </span>
@@ -69,7 +69,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Format 1: Keynotes -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="w-14 h-14 rounded-xl bg-red-50 border border-red-100 text-[#c92a2a] flex items-center justify-center text-xl group-hover:bg-[#c92a2a] group-hover:text-white transition duration-200">
                             <i class="fa-solid fa-bolt-lightning"></i>
@@ -90,7 +90,7 @@
                 </div>
 
                 <!-- Format 2: Corporate Workshops -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border-2 border-[#c92a2a] shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border-2 border-[#c92a2a] shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="w-14 h-14 rounded-xl bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-sm">
                             <i class="fa-solid fa-users-gear"></i>
@@ -111,7 +111,7 @@
                 </div>
 
                 <!-- Format 3: Executive Coaching -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="w-14 h-14 rounded-xl bg-gray-100 border border-gray-200 text-gray-800 flex items-center justify-center text-xl group-hover:bg-[#0c0d12] group-hover:text-white transition duration-200">
                             <i class="fa-solid fa-chess-king"></i>
@@ -143,7 +143,7 @@
     <section class="py-20 sm:py-28 bg-[#ffffff] border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Core Keynote Themes
                 </span>
@@ -155,7 +155,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 
-                <div class="bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-[#c92a2a] border-t border-r border-b border-gray-200 shadow-sm">
+                <div class="reveal-card bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-[#c92a2a] border-t border-r border-b border-gray-200 shadow-sm">
                     <h3 class="font-oswald text-xl sm:text-2xl font-bold text-gray-900 uppercase tracking-wide mb-2">
                         1. Achieve More, Succeed Faster (Peak Performance &amp; Mindset)
                     </h3>
@@ -164,7 +164,7 @@
                     </p>
                 </div>
 
-                <div class="bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-slate-700 border-t border-r border-b border-gray-200 shadow-sm">
+                <div class="reveal-card bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-slate-700 border-t border-r border-b border-gray-200 shadow-sm">
                     <h3 class="font-oswald text-xl sm:text-2xl font-bold text-gray-900 uppercase tracking-wide mb-2">
                         2. High-Ticket Sales Mastery &amp; Persuasion Architecture
                     </h3>
@@ -173,7 +173,7 @@
                     </p>
                 </div>
 
-                <div class="bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-emerald-700 border-t border-r border-b border-gray-200 shadow-sm">
+                <div class="reveal-card bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-emerald-700 border-t border-r border-b border-gray-200 shadow-sm">
                     <h3 class="font-oswald text-xl sm:text-2xl font-bold text-gray-900 uppercase tracking-wide mb-2">
                         3. Unleash The Champion In You (Team Culture &amp; Leadership)
                     </h3>
@@ -182,7 +182,7 @@
                     </p>
                 </div>
 
-                <div class="bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-indigo-700 border-t border-r border-b border-gray-200 shadow-sm">
+                <div class="reveal-card bg-[#fbfaf8] rounded-xl p-8 border-l-4 border-indigo-700 border-t border-r border-b border-gray-200 shadow-sm">
                     <h3 class="font-oswald text-xl sm:text-2xl font-bold text-gray-900 uppercase tracking-wide mb-2">
                         4. Future-Proofing Business with AI &amp; Digital Dominance
                     </h3>
@@ -203,7 +203,7 @@
     <section id="booking-form" class="py-20 sm:py-28 bg-[#0c0d12] border-b border-gray-800 relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
-            <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+            <div class="section-header text-center max-w-2xl mx-auto mb-12 space-y-4">
                 <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold font-montserrat uppercase tracking-wider">
                     <i class="fa-solid fa-calendar-check"></i>
                     Direct Keynote Booking Desk
@@ -216,7 +216,7 @@
                 </p>
             </div>
 
-            <form action="#" method="POST" class="bg-[#12141c] p-8 sm:p-12 rounded-2xl space-y-6 border border-gray-800 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Your keynote request has been received. Our speaker bureau will contact you shortly.');">
+            <form action="#" method="POST" class="reveal-block bg-[#12141c] p-8 sm:p-12 rounded-2xl space-y-6 border border-gray-800 shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Your keynote request has been received. Our speaker bureau will contact you shortly.');">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-2">Organizer / Contact Name *</label>

@@ -8,7 +8,7 @@ window.ScrollTrigger = ScrollTrigger;
 
 /* ===================================================================
    OSMAN GANI - JAVASCRIPT & GSAP SCROLL CONTROLLER
-   Replicated exactly from reference architecture (http://127.0.0.1:8001/)
+   Full-site Animation Engine (Homepage & All Subpages)
    =================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -25,42 +25,67 @@ window.addEventListener('load', () => {
     }
 });
 
-/* ---------------- 1. Hero Entrance Animations ---------------- */
+/* ---------------- 1. Hero Entrance Animations (Homepage & All Subpages) ---------------- */
 function initHeroAnimations() {
-    const heroSec = document.querySelector('.hero-section');
-    if (!heroSec) return;
+    // A. Homepage Hero Section
+    const homeHero = document.querySelector('.hero-section');
+    if (homeHero) {
+        const heroLeft = homeHero.querySelector('.hero-left-content');
+        if (heroLeft && heroLeft.children.length) {
+            gsap.fromTo(
+                Array.from(heroLeft.children),
+                { opacity: 0, y: 30 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.85,
+                    stagger: 0.12,
+                    ease: 'power3.out',
+                }
+            );
+        }
 
-    // Left column items stagger entrance on load
-    const heroLeft = heroSec.querySelector('.hero-left-content');
-    if (heroLeft && heroLeft.children.length) {
-        gsap.fromTo(
-            Array.from(heroLeft.children),
-            { opacity: 0, y: 30 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.8,
-                stagger: 0.12,
-                ease: 'power3.out',
-            }
-        );
+        const heroRight = homeHero.querySelector('.hero-right-media');
+        if (heroRight) {
+            gsap.fromTo(
+                heroRight,
+                { opacity: 0, scale: 0.92, y: 40 },
+                {
+                    opacity: 1,
+                    scale: 1,
+                    y: 0,
+                    duration: 0.95,
+                    delay: 0.2,
+                    ease: 'power3.out',
+                }
+            );
+        }
     }
 
-    // Right column video frame entrance on load
-    const heroRight = heroSec.querySelector('.hero-right-media');
-    if (heroRight) {
-        gsap.fromTo(
-            heroRight,
-            { opacity: 0, scale: 0.92, y: 40 },
-            {
-                opacity: 1,
-                scale: 1,
-                y: 0,
-                duration: 0.9,
-                delay: 0.2,
-                ease: 'power3.out',
-            }
-        );
+    // B. Subpage Hero Banners (Books, Courses, Events, Speaking, About, Contact, Blog, etc.)
+    const subpageHero = document.querySelector(
+        'main > section:first-of-type, body > section:first-of-type, .subpage-hero, .hero-banner'
+    );
+
+    if (subpageHero && !subpageHero.classList.contains('hero-section')) {
+        const container =
+            subpageHero.querySelector('.max-w-5xl, .max-w-6xl, .max-w-7xl, .max-w-4xl, .hero-content') ||
+            subpageHero.firstElementChild;
+
+        if (container && container.children.length) {
+            // Animate breadcrumbs, badge, heading, description, buttons
+            gsap.fromTo(
+                Array.from(container.children),
+                { opacity: 0, y: 28 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    stagger: 0.1,
+                    ease: 'power3.out',
+                }
+            );
+        }
     }
 }
 
@@ -72,7 +97,9 @@ function initGsapScrollAnimations() {
     }
 
     // A. Section Headers (Fade and slide up on every scroll)
-    const sectionHeaders = document.querySelectorAll('.section-header');
+    const sectionHeaders = document.querySelectorAll(
+        '.section-header, .subpage-section-header, [data-section-header]'
+    );
     sectionHeaders.forEach((header) => {
         gsap.fromTo(
             header,
@@ -80,7 +107,7 @@ function initGsapScrollAnimations() {
             {
                 y: 0,
                 opacity: 1,
-                duration: 0.7,
+                duration: 0.75,
                 ease: 'power2.out',
                 scrollTrigger: {
                     trigger: header,
@@ -92,51 +119,126 @@ function initGsapScrollAnimations() {
         );
     });
 
-    // B. Stats Section (Smooth Hardware-Accelerated Scroll Trigger)
-    const statsSection = document.querySelector('.stats-section');
-    if (statsSection) {
-        gsap.fromTo(
-            '.stat-card, .stat-box, .stat-item',
-            { y: 35, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.8,
-                stagger: 0.12,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: statsSection,
-                    start: 'top 85%',
-                    once: true,
-                    onEnter: runStatsCounters,
-                },
-            }
+    // B. Stats Sections & Metric Counters
+    const statsSections = document.querySelectorAll(
+        '.stats-section, .quick-stats-banner, [data-stats-section]'
+    );
+    statsSections.forEach((section) => {
+        const statItems = section.querySelectorAll(
+            '.stat-card, .stat-box, .stat-item, .grid > div'
         );
+        if (statItems.length) {
+            gsap.fromTo(
+                statItems,
+                { y: 35, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.12,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: section,
+                        start: 'top 85%',
+                        once: true,
+                        onEnter: () => runStatsCounters(section),
+                    },
+                }
+            );
+        }
+    });
+
+    // C. Card Grids & Interactive Lists across All Pages
+    const cardSelectors = [
+        '.pillar-card',
+        '.book-card-3d',
+        '.book-catalog-card',
+        '.testimonial-card-dark',
+        '.testimonial-card',
+        '.course-card',
+        '.event-card',
+        '.speaking-card',
+        '.speaking-format-card',
+        '.topic-card',
+        '.glass-card',
+        '.reveal-card',
+        '.article-card',
+        'article',
+        '.gallery-item',
+        '.gallery-card',
+        '.media-card',
+        '.tool-card',
+        '.ebook-card',
+        '.video-card-item',
+        '.contact-method-card'
+    ].join(', ');
+
+    const containers = new Set();
+    document.querySelectorAll(cardSelectors).forEach((card) => {
+        const parent =
+            card.closest('.grid, .space-y-12, .space-y-8, .space-y-10, .testimonials-grid, .courses-grid, .books-grid, .pillars-grid') ||
+            card.parentElement;
+        if (parent) {
+            containers.add(parent);
+        }
+    });
+
+    containers.forEach((container) => {
+        // Collect matching direct child or immediate cards in this container
+        const cards = Array.from(container.querySelectorAll(cardSelectors)).filter((c) => {
+            const nearestContainer = c.closest(
+                '.grid, .space-y-12, .space-y-8, .space-y-10, .testimonials-grid, .courses-grid, .books-grid, .pillars-grid'
+            ) || c.parentElement;
+            return nearestContainer === container;
+        });
+
+        if (cards.length) {
+            gsap.fromTo(
+                cards,
+                { y: 45, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.75,
+                    stagger: 0.12,
+                    ease: 'power3.out',
+                    scrollTrigger: {
+                        trigger: container,
+                        start: 'top 85%',
+                        end: 'bottom 15%',
+                        toggleActions: 'play reverse play reverse',
+                    },
+                }
+            );
+        }
+    });
+
+    // D. Timeline Journey Animations (Life Mission & Osman Gani Bio)
+    const timelineSteps = document.querySelectorAll(
+        '#timeline-journey .space-y-12 > div, #timeline-journey .grid, .timeline-steps > div'
+    );
+    if (timelineSteps.length) {
+        timelineSteps.forEach((step) => {
+            gsap.fromTo(
+                step,
+                { y: 40, opacity: 0 },
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.75,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: step,
+                        start: 'top 85%',
+                        end: 'bottom 15%',
+                        toggleActions: 'play reverse play reverse',
+                    },
+                }
+            );
+        });
     }
 
-    // C. 5 Pillars Section ("Here's How Osman Can Help You & Your Team")
-    const pillarsSection = document.querySelector('.pillars-section');
-    if (pillarsSection && document.querySelectorAll('.pillar-card').length) {
-        gsap.fromTo(
-            '.pillar-card',
-            { y: 50, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.7,
-                stagger: 0.12,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: pillarsSection,
-                    start: 'top 88%',
-                    end: 'bottom 15%',
-                    toggleActions: 'play reverse play reverse',
-                },
-            }
-        );
-    }
-
-    // D. Featured In / Media & Press Marquee Section
+    // E. Featured In / Media & Press Marquee Section
     const mediaSection = document.querySelector('.media-press-section');
     if (mediaSection) {
         gsap.fromTo(
@@ -157,77 +259,13 @@ function initGsapScrollAnimations() {
         );
     }
 
-    // E. Bestselling Books Grid Cards
-    const booksSection = document.querySelector('.books-section');
-    if (booksSection && document.querySelectorAll('.book-card-3d').length) {
+    // F. Standalone Large Feature Blocks & Forms
+    const featuredBlocks = document.querySelectorAll(
+        '.newsletter-content, #booking-form, #contact-form, #lead-form, .story-narrative-box, .reveal-block'
+    );
+    featuredBlocks.forEach((block) => {
         gsap.fromTo(
-            '.book-card-3d',
-            { y: 50, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.7,
-                stagger: 0.12,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: booksSection,
-                    start: 'top 85%',
-                    end: 'bottom 15%',
-                    toggleActions: 'play reverse play reverse',
-                },
-            }
-        );
-    }
-
-    // F. Praise & Testimonials Grid
-    const testimonialsSection = document.querySelector('.testimonials-section');
-    if (testimonialsSection && document.querySelectorAll('.testimonial-card-dark').length) {
-        gsap.fromTo(
-            '.testimonial-card-dark',
-            { y: 35, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.7,
-                stagger: 0.15,
-                ease: 'power2.out',
-                scrollTrigger: {
-                    trigger: testimonialsSection,
-                    start: 'top 85%',
-                    end: 'bottom 15%',
-                    toggleActions: 'play reverse play reverse',
-                },
-            }
-        );
-    }
-
-    // G. Latest Courses Grid Cards
-    const coursesSection = document.querySelector('.courses-section');
-    if (coursesSection && document.querySelectorAll('.course-card').length) {
-        gsap.fromTo(
-            '.course-card',
-            { y: 50, opacity: 0 },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 0.7,
-                stagger: 0.12,
-                ease: 'power3.out',
-                scrollTrigger: {
-                    trigger: coursesSection,
-                    start: 'top 85%',
-                    end: 'bottom 15%',
-                    toggleActions: 'play reverse play reverse',
-                },
-            }
-        );
-    }
-
-    // H. Newsletter / Lead Magnet CTA Section
-    const newsletterSection = document.querySelector('.newsletter-section');
-    if (newsletterSection) {
-        gsap.fromTo(
-            '.newsletter-content',
+            block,
             { y: 35, opacity: 0 },
             {
                 y: 0,
@@ -235,59 +273,31 @@ function initGsapScrollAnimations() {
                 duration: 0.8,
                 ease: 'power3.out',
                 scrollTrigger: {
-                    trigger: newsletterSection,
+                    trigger: block,
                     start: 'top 85%',
                     end: 'bottom 15%',
                     toggleActions: 'play reverse play reverse',
                 },
             }
         );
-    }
-
-    // I. Subpage Glass Cards (Books, Courses, Events, Speaking, Life Mission, Free Tools/Videos)
-    const glassCards = document.querySelectorAll('.glass-card');
-    if (glassCards.length) {
-        const processedContainers = new Set();
-        glassCards.forEach((card) => {
-            const container = card.closest('section, main, .grid') || card.parentElement;
-            if (container && !processedContainers.has(container)) {
-                processedContainers.add(container);
-                const cardsInContainer = container.querySelectorAll('.glass-card');
-                gsap.fromTo(
-                    cardsInContainer,
-                    { y: 40, opacity: 0 },
-                    {
-                        y: 0,
-                        opacity: 1,
-                        duration: 0.7,
-                        stagger: 0.12,
-                        ease: 'power3.out',
-                        scrollTrigger: {
-                            trigger: container,
-                            start: 'top 85%',
-                            end: 'bottom 15%',
-                            toggleActions: 'play reverse play reverse',
-                        },
-                    }
-                );
-            }
-        });
-    }
+    });
 }
 
 /* ---------------- 3. Stats Counter (GSAP Tweened, 60fps silky smooth) ---------------- */
-function runStatsCounters() {
-    const counters = document.querySelectorAll('.stat-number');
+function runStatsCounters(scope = document) {
+    const counters = scope.querySelectorAll('.stat-number');
     if (!counters.length) return;
 
     counters.forEach((counter) => {
         if (counter.dataset.hasAnimated === 'true') return;
         counter.dataset.hasAnimated = 'true';
 
-        const target = +counter.getAttribute('data-target') || 0;
+        const target = parseFloat(counter.getAttribute('data-target')) || 0;
         const suffix = counter.getAttribute('data-suffix') || '';
+        const prefix = counter.getAttribute('data-prefix') || '';
         const isComma = counter.getAttribute('data-comma') === 'true';
         const isB = counter.getAttribute('data-b') === 'true';
+        const isDecimal = String(target).includes('.');
 
         const countObj = { val: 0 };
         gsap.to(countObj, {
@@ -295,20 +305,28 @@ function runStatsCounters() {
             duration: 1.8,
             ease: 'power2.out',
             onUpdate: () => {
-                if (isB) {
-                    counter.innerText = Math.round(countObj.val) + suffix;
+                let formatted;
+                if (isDecimal) {
+                    formatted = countObj.val.toFixed(1);
+                } else if (isB) {
+                    formatted = Math.round(countObj.val);
                 } else if (isComma) {
-                    counter.innerText = Math.round(countObj.val).toLocaleString() + suffix;
+                    formatted = Math.round(countObj.val).toLocaleString();
                 } else {
-                    counter.innerText = Math.round(countObj.val) + suffix;
+                    formatted = Math.round(countObj.val);
                 }
+                counter.innerText = prefix + formatted + suffix;
             },
             onComplete: () => {
-                if (isComma) {
-                    counter.innerText = target.toLocaleString() + suffix;
+                let finalVal;
+                if (isDecimal) {
+                    finalVal = target.toFixed(1);
+                } else if (isComma) {
+                    finalVal = target.toLocaleString();
                 } else {
-                    counter.innerText = target + suffix;
+                    finalVal = target;
                 }
+                counter.innerText = prefix + finalVal + suffix;
             },
         });
     });
@@ -323,11 +341,9 @@ function initStickyHeader() {
         start: 'top -40',
         onUpdate: (self) => {
             if (self.progress > 0) {
-                header.classList.add('shadow-2xl', 'backdrop-blur-md', 'bg-black/95');
-                header.classList.remove('bg-[#000000]');
+                header.classList.add('shadow-2xl', 'backdrop-blur-md', 'bg-[#0c0d12]/95');
             } else {
-                header.classList.remove('shadow-2xl', 'backdrop-blur-md', 'bg-black/95');
-                header.classList.add('bg-[#000000]');
+                header.classList.remove('shadow-2xl', 'backdrop-blur-md', 'bg-[#0c0d12]/95');
             }
         },
     });

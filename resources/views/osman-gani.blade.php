@@ -261,7 +261,7 @@
 
                 <!-- Right Profile Highlight Badge Card -->
                 <div class="lg:col-span-5">
-                    <div class="relative max-w-md mx-auto bg-[#0c0d12] text-white p-8 rounded-3xl border border-gray-800 shadow-xl text-center space-y-5">
+                    <div class="reveal-card relative max-w-md mx-auto bg-[#0c0d12] text-white p-8 rounded-3xl border border-gray-800 shadow-xl text-center space-y-5">
                         
                         <div class="w-36 h-36 mx-auto rounded-full border-2 border-[#c92a2a] p-1.5 shadow-lg bg-[#141722]">
                             <div class="w-full h-full rounded-full bg-[#181b28] flex items-center justify-center text-white font-oswald text-5xl font-black">
@@ -297,7 +297,7 @@
             <div class="grid lg:grid-cols-12 gap-12 items-center pt-8 border-t border-gray-100">
                 
                 <div class="lg:col-span-5 order-2 lg:order-1">
-                    <div class="bg-gradient-to-br from-red-900 via-gray-900 to-black rounded-3xl p-8 text-white shadow-xl aspect-[4/3] flex flex-col justify-between border border-red-500/20">
+                    <div class="reveal-card bg-gradient-to-br from-red-900 via-gray-900 to-black rounded-3xl p-8 text-white shadow-xl aspect-[4/3] flex flex-col justify-between border border-red-500/20">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold uppercase tracking-widest text-amber-400">The Humble Beginning</span>
                             <i class="fa-solid fa-seedling text-2xl text-emerald-400"></i>
@@ -344,7 +344,7 @@
                 </div>
 
                 <div class="lg:col-span-5">
-                    <div class="bg-gradient-to-br from-gray-900 via-indigo-950 to-black rounded-3xl p-8 text-white shadow-xl aspect-[4/3] flex flex-col justify-between border border-blue-500/20">
+                    <div class="reveal-card bg-gradient-to-br from-gray-900 via-indigo-950 to-black rounded-3xl p-8 text-white shadow-xl aspect-[4/3] flex flex-col justify-between border border-blue-500/20">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">Peak Performance</span>
                             <i class="fa-solid fa-brain text-2xl text-cyan-400"></i>
@@ -377,7 +377,7 @@
                 
                 <!-- Left Column: Stylized Badge Graphic -->
                 <div class="lg:col-span-5 text-center lg:text-left">
-                    <div class="bg-white rounded-3xl p-8 border border-gray-200 shadow-xl space-y-6">
+                    <div class="reveal-card bg-white rounded-3xl p-8 border border-gray-200 shadow-xl space-y-6">
                         <div class="w-24 h-24 mx-auto lg:mx-0 rounded-2xl bg-gradient-to-tr from-[#c92a2a] to-[#ff8421] text-white flex items-center justify-center text-4xl shadow-lg">
                             <i class="fa-solid fa-award"></i>
                         </div>
@@ -469,7 +469,7 @@
     <section class="py-20 bg-white border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Moments of Global Impact</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold uppercase text-gray-950">
                     Empowering Audiences Worldwide
@@ -480,7 +480,7 @@
             <!-- 4 Column Impact Highlights -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
+                <div class="reveal-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
                     <div class="p-6 bg-gradient-to-br from-red-900 to-black text-white aspect-[4/3] flex flex-col justify-between">
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-red-400">
                             <i class="fa-solid fa-users-viewfinder text-lg"></i>
@@ -492,7 +492,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
+                <div class="reveal-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
                     <div class="p-6 bg-gradient-to-br from-amber-900 to-black text-white aspect-[4/3] flex flex-col justify-between">
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400">
                             <i class="fa-solid fa-handshake-angle text-lg"></i>
@@ -504,7 +504,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
+                <div class="reveal-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
                     <div class="p-6 bg-gradient-to-br from-indigo-900 to-black text-white aspect-[4/3] flex flex-col justify-between">
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-cyan-400">
                             <i class="fa-solid fa-book-bookmark text-lg"></i>
@@ -516,7 +516,7 @@
                     </div>
                 </div>
 
-                <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
+                <div class="reveal-card bg-gray-900 rounded-2xl overflow-hidden shadow-xl group border border-gray-800">
                     <div class="p-6 bg-gradient-to-br from-emerald-900 to-black text-white aspect-[4/3] flex flex-col justify-between">
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-emerald-400">
                             <i class="fa-solid fa-trophy text-lg"></i>
@@ -540,7 +540,7 @@
     <section class="py-20 bg-gray-50 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Core Solutions</span>
                 <h2 class="font-oswald text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 uppercase">
                     Here's How Osman Can Help You &amp; Your Team
@@ -551,7 +551,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
                 
                 <!-- Pillar 1: Books -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="reveal-card bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-red-600 to-amber-700 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-book-open"></i>
@@ -570,7 +570,7 @@
                 </div>
 
                 <!-- Pillar 2: Speaking -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="reveal-card bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-gray-900 to-red-900 rounded-lg shadow-md flex items-center justify-center text-amber-400 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-microphone-lines"></i>
@@ -589,7 +589,7 @@
                 </div>
 
                 <!-- Pillar 3: Courses -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="reveal-card bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-indigo-900 to-purple-900 rounded-lg shadow-md flex items-center justify-center text-cyan-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-laptop-code"></i>
@@ -608,7 +608,7 @@
                 </div>
 
                 <!-- Pillar 4: Events -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="reveal-card bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-emerald-900 to-teal-900 rounded-lg shadow-md flex items-center justify-center text-emerald-300 text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-people-group"></i>
@@ -627,7 +627,7 @@
                 </div>
 
                 <!-- Pillar 5: Free Videos -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
+                <div class="reveal-card bg-white border border-gray-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-20 h-28 mx-auto bg-gradient-to-br from-red-800 to-rose-950 rounded-lg shadow-md flex items-center justify-center text-white text-3xl font-oswald font-bold border-2 border-white">
                             <i class="fa-solid fa-circle-play"></i>
@@ -654,7 +654,7 @@
     <!-- 8. CALL TO ACTION / BOOK OSMAN GANI -->
     <!-- ======================================================== -->
     <section class="py-20 bg-[#0c0d12] border-t border-gray-800 text-white text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div class="section-header max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <span class="inline-block px-3.5 py-1.5 rounded-full bg-white/5 text-[#c92a2a] text-xs font-bold uppercase tracking-wider border border-white/10">
                 Book A High-Impact Keynote
             </span>

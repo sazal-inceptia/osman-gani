@@ -290,7 +290,7 @@
                 
                 <!-- Left: Portrait / Visual Brand Box -->
                 <div class="lg:col-span-5 relative">
-                    <div class="relative rounded-3xl overflow-hidden border-2 border-red-900/40 shadow-2xl bg-gradient-to-br from-[#131620] to-[#0a0c12] p-2 group">
+                    <div class="reveal-card relative rounded-3xl overflow-hidden border-2 border-red-900/40 shadow-2xl bg-gradient-to-br from-[#131620] to-[#0a0c12] p-2 group">
                         <div class="aspect-[4/5] rounded-2xl overflow-hidden relative bg-gradient-to-t from-black via-zinc-900 to-zinc-800 flex items-center justify-center">
                             <!-- High Energy Speaker Silhouette / Illustration -->
                             <div class="w-full h-full flex flex-col items-center justify-center text-center p-8 bg-gradient-to-b from-[#1a0507]/40 via-black to-[#0a0c12]">
@@ -314,7 +314,7 @@
                 </div>
 
                 <!-- Right: Story Narrative -->
-                <div class="lg:col-span-7 space-y-6">
+                <div class="reveal-card lg:col-span-7 space-y-6">
                     <div class="border-l-4 border-[#c92a2a] pl-6 py-1">
                         <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-1">
                             An Authentic Journey
@@ -360,7 +360,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             
             <!-- Section Header -->
-            <div class="text-center max-w-3xl mx-auto mb-16 sm:mb-24">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16 sm:mb-24">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Chronicles Of Transformation
                 </span>
@@ -377,7 +377,7 @@
             <div class="space-y-12 sm:space-y-16">
 
                 <!-- STEP 1: CHILDHOOD -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#4cadad] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -402,7 +402,7 @@
                 </div>
 
                 <!-- STEP 2: TEENAGE & EARLY RESILIENCE -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#41516c] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -427,7 +427,7 @@
                 </div>
 
                 <!-- STEP 3: HIGHER EDUCATION & CORPORATE LEADERSHIP -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#e24a68] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -452,7 +452,7 @@
                 </div>
 
                 <!-- STEP 4: MY OWN TRAINING & LIFELONG STUDENT -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#fbca3e] text-black rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -477,7 +477,7 @@
                 </div>
 
                 <!-- STEP 5: ENTREPRENEURSHIP & RISK-TAKING -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#a2267e] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -502,7 +502,7 @@
                 </div>
 
                 <!-- STEP 6: AUTHOR & CONTENT CREATOR -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#1b5f8c] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -527,7 +527,7 @@
                 </div>
 
                 <!-- STEP 7: MOTIVATIONAL SPEAKER & ONLINE EDUCATOR -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-[#c92a2a] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -552,7 +552,7 @@
                 </div>
 
                 <!-- STEP 8: THE GRAND LIFE MISSION -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                <div class="reveal-card grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Capsule Header Badge -->
                     <div class="md:col-span-4 flex flex-col justify-center">
                         <div class="bg-gradient-to-br from-[#c92a2a] via-[#ff6b6b] to-[#ff8421] rounded-2xl md:rounded-r-none md:rounded-l-3xl p-6 sm:p-8 text-white shadow-2xl flex items-center justify-between md:justify-start gap-4 h-full">
@@ -587,7 +587,7 @@
     <section class="py-20 sm:py-28 bg-[#050608] border-b border-gray-800 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Solutions &amp; Offerings
                 </span>
@@ -604,7 +604,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
 
                 <!-- Card 1: Books -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
+                <div class="reveal-card glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-book"></i>
@@ -622,7 +622,7 @@
                 </div>
 
                 <!-- Card 2: Speaking -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group border-white/10">
+                <div class="reveal-card glass-card rounded-2xl p-6 flex flex-col justify-between text-center group border-white/10">
                     <div class="space-y-4">
                         <div class="w-16 h-16 rounded-2xl bg-[#c92a2a] text-white flex items-center justify-center text-2xl mx-auto shadow-md transition duration-300">
                             <i class="fa-solid fa-microphone-lines"></i>
@@ -640,7 +640,7 @@
                 </div>
 
                 <!-- Card 3: Courses -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
+                <div class="reveal-card glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-laptop-code"></i>
@@ -658,7 +658,7 @@
                 </div>
 
                 <!-- Card 4: Events -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
+                <div class="reveal-card glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-users-rays"></i>
@@ -676,7 +676,7 @@
                 </div>
 
                 <!-- Card 5: Free Resources -->
-                <div class="glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
+                <div class="reveal-card glass-card rounded-2xl p-6 flex flex-col justify-between text-center group">
                     <div class="space-y-4">
                         <div class="w-16 h-16 rounded-2xl bg-red-950/60 border border-red-500/30 text-[#c92a2a] flex items-center justify-center text-2xl mx-auto group-hover:bg-[#c92a2a] group-hover:text-white transition duration-300">
                             <i class="fa-solid fa-play"></i>
@@ -703,7 +703,7 @@
     <!-- 7. MISSION MANIFESTO CALL TO ACTION -->
     <!-- ======================================================== -->
     <section class="py-20 sm:py-24 bg-[#0c0d12] border-b border-gray-800 relative text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
+        <div class="section-header max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
             <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold font-montserrat uppercase tracking-wider">
                 <i class="fa-solid fa-heart-pulse"></i>
                 Join The Movement

@@ -216,21 +216,21 @@
             </div>
 
             <!-- Quick Metrics Row -->
-            <div class="pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <div class="stats-section pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
                 <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
-                    <div class="font-oswald text-3xl font-bold text-[#c92a2a]">50+</div>
+                    <div class="stat-number font-oswald text-3xl font-bold text-[#c92a2a]" data-target="50" data-suffix="+">50+</div>
                     <div class="text-xs text-gray-300 font-ubuntu">Awards &amp; Honors</div>
                 </div>
                 <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
-                    <div class="font-oswald text-3xl font-bold text-white">500+</div>
+                    <div class="stat-number font-oswald text-3xl font-bold text-white" data-target="500" data-suffix="+">500+</div>
                     <div class="text-xs text-gray-300 font-ubuntu">Keynote Events</div>
                 </div>
                 <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
-                    <div class="font-oswald text-3xl font-bold text-[#c92a2a]">100+</div>
+                    <div class="stat-number font-oswald text-3xl font-bold text-[#c92a2a]" data-target="100" data-suffix="+">100+</div>
                     <div class="text-xs text-gray-300 font-ubuntu">Press Publications</div>
                 </div>
                 <div class="bg-white/5 rounded-2xl p-4 border border-white/10">
-                    <div class="font-oswald text-3xl font-bold text-white">1B+</div>
+                    <div class="stat-number font-oswald text-3xl font-bold text-white" data-target="1" data-suffix="B+">1B+</div>
                     <div class="text-xs text-gray-300 font-ubuntu">Media Impressions</div>
                 </div>
             </div>
@@ -272,7 +272,7 @@
     <section id="sec-awards" class="py-16 bg-gradient-to-b from-gray-50 to-white border-b border-gray-200 gallery-section" data-category="awards">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex items-center justify-between mb-10 border-b border-gray-200 pb-4">
+            <div class="section-header flex items-center justify-between mb-10 border-b border-gray-200 pb-4">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Recognitions</span>
                     <h2 class="font-oswald text-3xl sm:text-4xl font-extrabold uppercase text-gray-950">
@@ -290,7 +290,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Award 1 -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl p-6 text-white text-center aspect-[16/10] flex flex-col justify-center items-center shadow-md relative overflow-hidden group-hover:scale-102 transition">
                             <i class="fa-solid fa-trophy text-5xl text-amber-200 mb-2"></i>
@@ -311,7 +311,7 @@
                 </div>
 
                 <!-- Award 2 -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="bg-gradient-to-br from-red-600 to-rose-800 rounded-xl p-6 text-white text-center aspect-[16/10] flex flex-col justify-center items-center shadow-md relative overflow-hidden group-hover:scale-102 transition">
                             <i class="fa-solid fa-award text-5xl text-red-200 mb-2"></i>
@@ -332,7 +332,7 @@
                 </div>
 
                 <!-- Award 3 -->
-                <div class="bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-white rounded-2xl border border-gray-200 p-6 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-4">
                         <div class="bg-gradient-to-br from-indigo-800 to-purple-900 rounded-xl p-6 text-white text-center aspect-[16/10] flex flex-col justify-center items-center shadow-md relative overflow-hidden group-hover:scale-102 transition">
                             <i class="fa-solid fa-medal text-5xl text-purple-200 mb-2"></i>
@@ -363,7 +363,7 @@
     <section id="sec-press" class="py-16 bg-white border-b border-gray-200 gallery-section" data-category="press">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex items-center justify-between mb-10 border-b border-gray-200 pb-4">
+            <div class="section-header flex items-center justify-between mb-10 border-b border-gray-200 pb-4">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Media Clippings</span>
                     <h2 class="font-oswald text-3xl sm:text-4xl font-extrabold uppercase text-gray-950">
@@ -379,7 +379,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 <!-- Press 1 -->
-                <div class="bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-3">
                         <div class="bg-gray-900 text-white rounded-xl p-4 aspect-[4/3] flex flex-col justify-between relative overflow-hidden">
                             <span class="text-[10px] font-bold text-[#c92a2a] uppercase tracking-wider bg-black/40 px-2 py-0.5 rounded w-fit">Hindustan Times</span>
@@ -396,7 +396,7 @@
                 </div>
 
                 <!-- Press 2 -->
-                <div class="bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-3">
                         <div class="bg-gray-900 text-white rounded-xl p-4 aspect-[4/3] flex flex-col justify-between relative overflow-hidden">
                             <span class="text-[10px] font-bold text-amber-400 uppercase tracking-wider bg-black/40 px-2 py-0.5 rounded w-fit">Punjab Kesari</span>
@@ -413,7 +413,7 @@
                 </div>
 
                 <!-- Press 3 -->
-                <div class="bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-3">
                         <div class="bg-gray-900 text-white rounded-xl p-4 aspect-[4/3] flex flex-col justify-between relative overflow-hidden">
                             <span class="text-[10px] font-bold text-rose-400 uppercase tracking-wider bg-black/40 px-2 py-0.5 rounded w-fit">TEDx Official</span>
@@ -430,7 +430,7 @@
                 </div>
 
                 <!-- Press 4 -->
-                <div class="bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
+                <div class="reveal-card bg-gray-50 rounded-2xl border border-gray-200 p-5 shadow-lg hover:shadow-xl transition duration-300 flex flex-col justify-between group">
                     <div class="space-y-3">
                         <div class="bg-gray-900 text-white rounded-xl p-4 aspect-[4/3] flex flex-col justify-between relative overflow-hidden">
                             <span class="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-black/40 px-2 py-0.5 rounded w-fit">Industry Today</span>
@@ -457,7 +457,7 @@
     <section id="sec-stadiums" class="py-16 bg-gray-900 text-white border-b border-gray-800 gallery-section" data-category="stadiums">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="flex items-center justify-between mb-10 border-b border-gray-800 pb-4">
+            <div class="section-header flex items-center justify-between mb-10 border-b border-gray-800 pb-4">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-widest text-[#ff8421]">Arena Keynotes</span>
                     <h2 class="font-oswald text-3xl sm:text-4xl font-extrabold uppercase text-white">
@@ -473,7 +473,7 @@
             <!-- Stadium Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <div class="bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
+                <div class="reveal-card bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
                     <div class="relative bg-gradient-to-br from-red-950 via-gray-900 to-black rounded-xl aspect-[16/10] p-6 flex flex-col justify-between overflow-hidden">
                         <span class="bg-[#c92a2a] text-white text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full w-fit">Delhi Stadium</span>
                         <div>
@@ -486,7 +486,7 @@
                     </p>
                 </div>
 
-                <div class="bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
+                <div class="reveal-card bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
                     <div class="relative bg-gradient-to-br from-amber-950 via-gray-900 to-black rounded-xl aspect-[16/10] p-6 flex flex-col justify-between overflow-hidden">
                         <span class="bg-[#ff8421] text-white text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full w-fit">Mumbai Indoor Arena</span>
                         <div>
@@ -499,7 +499,7 @@
                     </p>
                 </div>
 
-                <div class="bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
+                <div class="reveal-card bg-[#121520] rounded-2xl border border-white/10 p-6 shadow-2xl hover:border-red-500/40 transition duration-300 space-y-4">
                     <div class="relative bg-gradient-to-br from-blue-950 via-gray-900 to-black rounded-xl aspect-[16/10] p-6 flex flex-col justify-between overflow-hidden">
                         <span class="bg-blue-600 text-white text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full w-fit">Bangkok International</span>
                         <div>
@@ -528,13 +528,13 @@
                 
                 <!-- Corporate Trainings Column -->
                 <div class="space-y-6">
-                    <div class="border-b border-gray-200 pb-3">
+                    <div class="section-header border-b border-gray-200 pb-3">
                         <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">B2B Excellence</span>
                         <h3 class="font-oswald text-3xl font-extrabold uppercase text-gray-950">Corporate Leadership Summits</h3>
                     </div>
 
                     <div class="space-y-4">
-                        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
+                        <div class="reveal-card bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
                             <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-[#c92a2a] text-xl font-bold flex-shrink-0">
                                 <i class="fa-solid fa-building-user"></i>
                             </div>
@@ -546,7 +546,7 @@
                             </div>
                         </div>
 
-                        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
+                        <div class="reveal-card bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
                             <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-[#ff8421] text-xl font-bold flex-shrink-0">
                                 <i class="fa-solid fa-chart-line"></i>
                             </div>
@@ -558,7 +558,7 @@
                             </div>
                         </div>
 
-                        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
+                        <div class="reveal-card bg-gray-50 rounded-2xl p-5 border border-gray-200 flex items-start gap-4 hover:border-[#c92a2a] transition">
                             <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 text-xl font-bold flex-shrink-0">
                                 <i class="fa-solid fa-comments"></i>
                             </div>
@@ -574,13 +574,13 @@
 
                 <!-- Book Launch Column (data-category="books") -->
                 <div id="sec-books" class="space-y-6 gallery-section" data-category="books">
-                    <div class="border-b border-gray-200 pb-3">
+                    <div class="section-header border-b border-gray-200 pb-3">
                         <span class="text-xs font-bold uppercase tracking-widest text-[#c92a2a]">Author Moments</span>
                         <h3 class="font-oswald text-3xl font-extrabold uppercase text-gray-950">Book Launches &amp; VIP Signings</h3>
                     </div>
 
                     <div class="space-y-4">
-                        <div class="bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl p-6 border border-gray-800 space-y-3">
+                        <div class="reveal-card bg-gradient-to-br from-gray-900 to-black text-white rounded-2xl p-6 border border-gray-800 space-y-3">
                             <div class="flex items-center justify-between text-amber-400 text-xs font-bold uppercase">
                                 <span>National Grand Launch</span>
                                 <i class="fa-solid fa-star"></i>
@@ -591,7 +591,7 @@
                             </p>
                         </div>
 
-                        <div class="bg-gradient-to-br from-red-950 to-black text-white rounded-2xl p-6 border border-gray-800 space-y-3">
+                        <div class="reveal-card bg-gradient-to-br from-red-950 to-black text-white rounded-2xl p-6 border border-gray-800 space-y-3">
                             <div class="flex items-center justify-between text-red-400 text-xs font-bold uppercase">
                                 <span>9-Language Tour</span>
                                 <i class="fa-solid fa-globe"></i>
@@ -614,7 +614,7 @@
     <!-- 9. CALL TO ACTION / MEDIA INQUIRIES & PRESS KIT -->
     <!-- ======================================================== -->
     <section class="py-20 bg-[#0c0d12] border-t border-gray-800 text-white text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+        <div class="section-header max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
             <span class="inline-block px-3.5 py-1.5 rounded-full bg-white/5 text-[#c92a2a] text-xs font-bold uppercase tracking-wider border border-white/10">
                 Press &amp; Event Booking Inquiries
             </span>

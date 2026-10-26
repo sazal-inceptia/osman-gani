@@ -13,7 +13,7 @@
 
     <section class="py-16 bg-[#fbfaf8] border-b border-gray-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 font-ubuntu text-sm sm:text-base text-gray-700 leading-relaxed">
-            <div class="bg-white p-8 sm:p-12 rounded-2xl border border-gray-200 shadow-sm space-y-6">
+            <div class="reveal-block bg-white p-8 sm:p-12 rounded-2xl border border-gray-200 shadow-sm space-y-6">
                 <h2 class="font-oswald text-xl font-bold text-gray-900 uppercase">1. Acceptance of Terms</h2>
                 <p>
                     By accessing or using the website, courses, books, and event booking services provided by Osman Gani, you agree to be bound by these Terms of Usage and all applicable laws and regulations.

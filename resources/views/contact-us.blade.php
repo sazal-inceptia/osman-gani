@@ -31,7 +31,7 @@
                 <div class="lg:col-span-5 space-y-6">
                     
                     <!-- Address Card -->
-                    <div class="bg-white rounded-2xl p-8 border-l-4 border-[#c92a2a] border-t border-r border-b border-gray-200 shadow-sm space-y-3">
+                    <div class="reveal-card bg-white rounded-2xl p-8 border-l-4 border-[#c92a2a] border-t border-r border-b border-gray-200 shadow-sm space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-red-50 text-[#c92a2a] flex items-center justify-center text-xl">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
@@ -44,7 +44,7 @@
                     </div>
 
                     <!-- Email Card -->
-                    <div class="bg-white rounded-2xl p-8 border-l-4 border-slate-700 border-t border-r border-b border-gray-200 shadow-sm space-y-3">
+                    <div class="reveal-card bg-white rounded-2xl p-8 border-l-4 border-slate-700 border-t border-r border-b border-gray-200 shadow-sm space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-xl">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
@@ -56,7 +56,7 @@
                     </div>
 
                     <!-- Phone Card -->
-                    <div class="bg-white rounded-2xl p-8 border-l-4 border-emerald-700 border-t border-r border-b border-gray-200 shadow-sm space-y-3">
+                    <div class="reveal-card bg-white rounded-2xl p-8 border-l-4 border-emerald-700 border-t border-r border-b border-gray-200 shadow-sm space-y-3">
                         <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-xl">
                             <i class="fa-solid fa-phone"></i>
                         </div>
@@ -92,7 +92,7 @@
                         </div>
                     @endif
 
-                    <form action="{{ route('contact.store') }}" method="POST" class="bg-white p-8 sm:p-12 rounded-2xl space-y-6 border border-gray-200 shadow-sm">
+                    <form action="{{ route('contact.store') }}" method="POST" class="reveal-block bg-white p-8 sm:p-12 rounded-2xl space-y-6 border border-gray-200 shadow-sm">
                         @csrf
                         <h3 class="font-oswald text-2xl sm:text-3xl font-bold text-gray-900 uppercase tracking-wide">
                             Send Us A Direct Message

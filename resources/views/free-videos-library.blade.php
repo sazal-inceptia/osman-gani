@@ -47,7 +47,7 @@
             
             <!-- Category 1: Most Watched Videos -->
             <div>
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-gray-200 pb-4">
+                <div class="section-header flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-gray-200 pb-4">
                     <div>
                         <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block">Trending Masterclasses</span>
                         <h2 class="font-oswald text-2xl sm:text-3xl font-bold uppercase tracking-wide text-gray-900">Most Watched Videos</h2>
@@ -60,7 +60,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Video Card 1 -->
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#0c0d12] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -77,7 +77,7 @@
                     </div>
 
                     <!-- Video Card 2 -->
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#1e293b] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -94,7 +94,7 @@
                     </div>
 
                     <!-- Video Card 3 -->
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#12141c] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -115,7 +115,7 @@
 
             <!-- Category 2: Time Management & Focus -->
             <div>
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-gray-200 pb-4">
+                <div class="section-header flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 border-b border-gray-200 pb-4">
                     <div>
                         <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block">Productivity &amp; Habits</span>
                         <h2 class="font-oswald text-2xl sm:text-3xl font-bold uppercase tracking-wide text-gray-900">Time Mastery Lessons</h2>
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#0c0d12] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -137,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#1e293b] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>
@@ -151,7 +151,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
+                    <div class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition group">
                         <div class="aspect-video bg-[#12141c] relative flex items-center justify-center">
                             <div class="w-14 h-14 rounded-full bg-[#c92a2a] text-white flex items-center justify-center text-xl shadow-md group-hover:scale-110 transition duration-200">
                                 <i class="fa-solid fa-play ml-0.5"></i>

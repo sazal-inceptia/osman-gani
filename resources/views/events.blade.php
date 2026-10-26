@@ -53,7 +53,7 @@
     <section id="events-list" class="py-20 sm:py-28 bg-[#fbfaf8] border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Signature Workshops
                 </span>
@@ -66,7 +66,7 @@
             <div class="space-y-12">
 
                 <!-- EVENT 1: TRAIN THE TRAINER BOOTCAMP -->
-                <div id="trainer-bootcamp" class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+                <div id="trainer-bootcamp" class="reveal-card bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         <div class="lg:col-span-4">
                             <div class="w-full aspect-video sm:aspect-square rounded-xl bg-[#c92a2a] p-8 flex flex-col justify-between text-white border border-red-800 shadow-sm">
@@ -121,7 +121,7 @@
 
 
                 <!-- EVENT 2: UNLEASH THE CHAMPION IN YOU -->
-                <div id="unleash-champion" class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+                <div id="unleash-champion" class="reveal-card bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         <div class="lg:col-span-4">
                             <div class="w-full aspect-video sm:aspect-square rounded-xl bg-[#0c0d12] p-8 flex flex-col justify-between text-white border border-gray-800 shadow-sm">

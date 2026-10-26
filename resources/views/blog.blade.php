@@ -28,7 +28,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- Article 1 -->
-                <article class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                <article class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video bg-[#0c0d12] relative flex items-center justify-center p-6 text-center">
                             <span class="absolute top-4 left-4 bg-[#c92a2a] text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">Mindset</span>
@@ -52,7 +52,7 @@
                 </article>
 
                 <!-- Article 2 -->
-                <article class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                <article class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video bg-[#1e293b] relative flex items-center justify-center p-6 text-center">
                             <span class="absolute top-4 left-4 bg-slate-700 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">Sales</span>
@@ -76,7 +76,7 @@
                 </article>
 
                 <!-- Article 3 -->
-                <article class="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                <article class="reveal-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                     <div>
                         <div class="aspect-video bg-[#12141c] relative flex items-center justify-center p-6 text-center">
                             <span class="absolute top-4 left-4 bg-emerald-700 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded">Productivity</span>

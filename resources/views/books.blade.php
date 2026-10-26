@@ -50,23 +50,23 @@
     <!-- ======================================================== -->
     <!-- 2. QUICK STATS BANNER -->
     <!-- ======================================================== -->
-    <section class="bg-[#12141c] border-b border-gray-800 py-10">
+    <section class="stats-section bg-[#12141c] border-b border-gray-800 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-4 border-r border-gray-800/80 last:border-0">
-                    <span class="font-oswald text-3xl sm:text-4xl font-bold text-[#c92a2a] block">5</span>
+                <div class="stat-card p-4 border-r border-gray-800/80 last:border-0">
+                    <span class="stat-number font-oswald text-3xl sm:text-4xl font-bold text-[#c92a2a] block" data-target="5">5</span>
                     <span class="text-gray-400 text-xs uppercase font-montserrat tracking-wider">Bestselling Titles</span>
                 </div>
-                <div class="p-4 border-r border-gray-800/80 last:border-0">
-                    <span class="font-oswald text-3xl sm:text-4xl font-bold text-white block">9+</span>
+                <div class="stat-card p-4 border-r border-gray-800/80 last:border-0">
+                    <span class="stat-number font-oswald text-3xl sm:text-4xl font-bold text-white block" data-target="9" data-suffix="+">9+</span>
                     <span class="text-gray-400 text-xs uppercase font-montserrat tracking-wider">Languages Published</span>
                 </div>
-                <div class="p-4 border-r border-gray-800/80 last:border-0">
-                    <span class="font-oswald text-3xl sm:text-4xl font-bold text-white block">500,000+</span>
+                <div class="stat-card p-4 border-r border-gray-800/80 last:border-0">
+                    <span class="stat-number font-oswald text-3xl sm:text-4xl font-bold text-white block" data-target="500000" data-suffix="+" data-comma="true">500,000+</span>
                     <span class="text-gray-400 text-xs uppercase font-montserrat tracking-wider">Copies Sold</span>
                 </div>
-                <div class="p-4">
-                    <span class="font-oswald text-3xl sm:text-4xl font-bold text-[#c92a2a] block">4.9 / 5</span>
+                <div class="stat-card p-4">
+                    <span class="stat-number font-oswald text-3xl sm:text-4xl font-bold text-[#c92a2a] block" data-target="4.9" data-suffix=" / 5">4.9 / 5</span>
                     <span class="text-gray-400 text-xs uppercase font-montserrat tracking-wider">Reader Rating</span>
                 </div>
             </div>
@@ -80,7 +80,7 @@
     <section id="books-catalog" class="py-20 sm:py-28 bg-[#fbfaf8] border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="section-header text-center max-w-3xl mx-auto mb-16">
                 <span class="text-[#c92a2a] font-montserrat text-xs font-bold uppercase tracking-widest block mb-2">
                     Mastery Collection
                 </span>
@@ -96,7 +96,7 @@
             <div class="space-y-12">
 
                 <!-- BOOK 1: ACHIEVE MORE SUCCEED FASTER -->
-                <div class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         
                         <!-- Book Visual Card -->
@@ -156,7 +156,7 @@
 
 
                 <!-- BOOK 2: BE A SOCIAL MEDIA & ONLINE BUSINESS MILLIONAIRE -->
-                <div class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         
                         <!-- Book Visual Card -->
@@ -213,7 +213,7 @@
 
 
                 <!-- BOOK 3: DREAMS TO REALITY IN 5 STEPS -->
-                <div class="bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 sm:p-12 border border-gray-200 shadow-sm relative overflow-hidden group hover:shadow-md transition">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         
                         <!-- Book Visual Card -->
@@ -271,7 +271,7 @@
     <!-- 4. CORPORATE & BULK ORDERS INQUIRY FORM -->
     <!-- ======================================================== -->
     <section id="bulk-orders" class="py-20 sm:py-24 bg-[#0c0d12] border-b border-gray-800 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
+        <div class="section-header max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6">
             <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#c92a2a] text-xs font-bold font-montserrat uppercase tracking-wider">
                 <i class="fa-solid fa-truck-ramp-box"></i>
                 Bulk Orders &amp; Custom Gifting
@@ -285,7 +285,7 @@
                 Organizations, colleges, and sales teams ordering 50+ copies receive custom corporate branding, author signed bookplates, and complimentary keynotes.
             </p>
 
-            <form action="#" method="POST" class="bg-[#12141c] border border-gray-800 p-8 rounded-2xl text-left space-y-4 max-w-2xl mx-auto shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Our bulk orders desk will contact you within 24 hours with custom discounts.');">
+            <form action="#" method="POST" class="reveal-block bg-[#12141c] border border-gray-800 p-8 rounded-2xl text-left space-y-4 max-w-2xl mx-auto shadow-xl" onsubmit="event.preventDefault(); alert('Thank you! Our bulk orders desk will contact you within 24 hours with custom discounts.');">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-montserrat uppercase tracking-wider text-gray-300 mb-1">Your Full Name</label>

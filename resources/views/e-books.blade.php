@@ -33,7 +33,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <!-- eBook 1 -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="aspect-[3/4] bg-[#c92a2a] rounded-xl p-6 text-white flex flex-col justify-between shadow-sm border border-red-800">
                             <span class="bg-black/30 text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full w-max border border-white/20">Free Guide</span>
@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- eBook 2 -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="aspect-[3/4] bg-[#1e293b] rounded-xl p-6 text-white flex flex-col justify-between shadow-sm border border-slate-700">
                             <span class="bg-black/30 text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full w-max border border-white/20">Free Guide</span>
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- eBook 3 -->
-                <div class="bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
+                <div class="reveal-card bg-white rounded-2xl p-8 flex flex-col justify-between border border-gray-200 shadow-sm hover:shadow-md transition group">
                     <div class="space-y-4">
                         <div class="aspect-[3/4] bg-[#0c0d12] rounded-xl p-6 text-white flex flex-col justify-between shadow-sm border border-gray-800">
                             <span class="bg-white/10 text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full w-max text-white">Free Guide</span>

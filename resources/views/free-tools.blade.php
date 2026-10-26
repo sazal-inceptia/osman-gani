@@ -32,7 +32,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <div class="bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
                     <div class="w-14 h-14 rounded-xl bg-red-50 text-[#c92a2a] flex items-center justify-center text-2xl">
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
@@ -45,7 +45,7 @@
                     </button>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
                     <div class="w-14 h-14 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center text-2xl">
                         <i class="fa-solid fa-chart-pie"></i>
                     </div>
@@ -58,7 +58,7 @@
                     </button>
                 </div>
 
-                <div class="bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
+                <div class="reveal-card bg-white rounded-2xl p-8 space-y-4 border border-gray-200 shadow-sm hover:shadow-md transition">
                     <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl">
                         <i class="fa-solid fa-list-check"></i>
                     </div>
